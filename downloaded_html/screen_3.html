@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Connect with Heritage | Geetanjali</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#5b403f",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-surface": "#1c1b1b",
+                    "surface-variant": "#e5e2e1",
+                    "tertiary-fixed": "#e3e2e0",
+                    "secondary": "#775a19",
+                    "outline-variant": "#e3bebb",
+                    "on-secondary-fixed": "#261900",
+                    "on-tertiary-fixed-variant": "#464746",
+                    "on-primary-fixed-variant": "#930019",
+                    "inverse-primary": "#ffb3b0",
+                    "outline": "#8f6f6e",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "primary": "#98001b",
+                    "tertiary-container": "#616261",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-tertiary-fixed": "#1a1c1b",
+                    "on-primary-container": "#ffd3d1",
+                    "on-tertiary-container": "#dededc",
+                    "inverse-surface": "#313030",
+                    "surface-container-high": "#eae7e7",
+                    "on-background": "#1c1b1b",
+                    "tertiary": "#494a49",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#c7c6c5",
+                    "secondary-container": "#fed488",
+                    "primary-fixed-dim": "#ffb3b0",
+                    "on-secondary-container": "#785a1a",
+                    "surface-container": "#f0eded",
+                    "surface": "#fcf9f8",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "primary-container": "#be1e2d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-tint": "#b91a2a",
+                    "on-primary-fixed": "#410006",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#dcd9d9",
+                    "primary-fixed": "#ffdad8",
+                    "secondary-fixed-dim": "#e9c176",
+                    "secondary-fixed": "#ffdea5",
+                    "background": "#fcf9f8",
+                    "surface-bright": "#fcf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "128px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "24px",
+                    "gutter": "32px",
+                    "container-max": "1440px"
+            },
+            "fontFamily": {
+                    "display-xl": ["Bodoni Moda"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "label-caps": ["Hanken Grotesk"],
+                    "headline-lg": ["Bodoni Moda"],
+                    "headline-lg-mobile": ["Bodoni Moda"],
+                    "caption": ["Hanken Grotesk"],
+                    "display-xl-mobile": ["Bodoni Moda"],
+                    "headline-md": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                    "display-xl": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "400"}],
+                    "caption": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "display-xl-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f8;
+            color: #1c1b1b;
+            overflow-x: hidden;
+        }
+        .hero-line {
+            height: 1px;
+            width: 100%;
+            background-color: #e3bebb;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: growLine 1s ease-out forwards;
+        }
+        @keyframes growLine {
+            to { transform: scaleX(1); }
+        }
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: revealUp 0.8s ease-out forwards;
+        }
+        @keyframes revealUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .input-focus-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #98001b;
+            transition: width 0.3s ease;
+        }
+        input:focus + .input-focus-line, textarea:focus + .input-focus-line {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- Top Navigation Bar -->
+<header class="bg-surface docked full-width top-0 border-b border-outline-variant z-50 sticky">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center">
+<img alt="Geetanjali Heritage Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeWzGJGAz9hLdrXxI2MmwH-Kgev0rHcqq72m6wzLSiIH8trCOa9gEIak4kPlz7bIqCN9j9H9x-uB-8Wl5IgU_-9w_I9vwgPv9C2YSH8cF4X15Vgi8FoQe9LGLMuwddcQ0Y0uH8JWVpGvB2uvi-hGe-XPqhWo-hRIXKigpnE-bxqQQbqw6ymya8CR_reWX5fog2A71FpuMBafkVLpF5-WO3HOBDDtXpS1v2sjY_ZKuJc7-9452P5hoHqgyX-mJwdb2LP5Lwlpuppxz7"/>
+</div>
+<ul class="hidden md:flex gap-gutter items-center">
+<li><a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Home</a></li>
+<li><a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Pressure Cookers</a></li>
+<li><a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Cookware</a></li>
+<li><a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md uppercase tracking-widest text-primary border-b border-primary pb-1" href="#">Contact Us</a></li>
+</ul>
+<div class="flex items-center gap-6 text-on-surface-variant">
+<button class="hover:text-primary transition-colors duration-300"><span class="material-symbols-outlined" data-icon="search">search</span></button>
+<button class="hover:text-primary transition-colors duration-300"><span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span></button>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop">
+<!-- Hero Section -->
+<section class="py-24 md:py-32 flex flex-col gap-8">
+<div class="reveal-up" style="animation-delay: 0.1s;">
+<h1 class="font-display-xl text-display-xl-mobile md:text-display-xl leading-tight">Connect with <br/><span class="italic text-secondary">Heritage</span></h1>
+</div>
+<div class="hero-line" style="animation-delay: 0.4s;"></div>
+<div class="reveal-up flex flex-col md:flex-row justify-between items-end gap-gutter" style="animation-delay: 0.6s;">
+<p class="font-body-lg text-body-lg max-w-xl text-on-surface-variant">
+                    From our heritage workshops in 1997 to your modern kitchen today, we are here to support your culinary journey. Reach out for inquiries, partnerships, or support.
+                </p>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-secondary uppercase mb-2">Direct Inquiry</span>
+<a class="font-headline-md text-headline-md text-primary hover:underline transition-all" href="mailto:harshhomeappliances@gmail.com">harshhomeappliances@gmail.com</a>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-section-gap">
+<!-- Contact Form Side (Columns 1-7) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 border border-outline-variant/30 reveal-up" style="animation-delay: 0.8s;">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-12">Inquiry Form</h2>
+<form class="flex flex-col gap-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline py-3 px-0 focus:ring-0 focus:outline-none placeholder:text-on-surface-variant/30 text-body-md" placeholder="John Doe" type="text"/>
+<div class="input-focus-line"></div>
+</div>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline py-3 px-0 focus:ring-0 focus:outline-none placeholder:text-on-surface-variant/30 text-body-md" placeholder="john@example.com" type="email"/>
+<div class="input-focus-line"></div>
+</div>
+</div>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase">Subject</label>
+<select class="w-full bg-transparent border-0 border-b border-outline py-3 px-0 focus:ring-0 focus:outline-none text-body-md appearance-none">
+<option>Product Inquiry</option>
+<option>Wholesale/Distribution</option>
+<option>Service &amp; Warranty</option>
+<option>Other</option>
+</select>
+<div class="input-focus-line"></div>
+</div>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2 uppercase">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline py-3 px-0 focus:ring-0 focus:outline-none placeholder:text-on-surface-variant/30 text-body-md resize-none" placeholder="How can we help you?" rows="4"></textarea>
+<div class="input-focus-line"></div>
+</div>
+<div class="mt-8">
+<button class="bg-primary text-on-primary px-12 py-5 font-label-caps text-label-caps uppercase tracking-[0.2em] transition-all hover:bg-primary-container active:scale-95" type="submit">
+                            Send Message
+                        </button>
+</div>
+</form>
+</div>
+<!-- Distribution Network Side (Columns 9-12) -->
+<div class="lg:col-start-9 lg:col-span-4 flex flex-col gap-12 reveal-up" style="animation-delay: 1s;">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6">Pan-India Network</h2>
+<p class="text-on-surface-variant mb-8">Our heritage products are available through a meticulously selected network of distributors across the subcontinent.</p>
+</div>
+<div class="space-y-6">
+<div class="border-b border-secondary/20 pb-4 flex justify-between items-center group cursor-default">
+<div>
+<span class="font-label-caps text-label-caps text-secondary block">WESTERN HUB</span>
+<p class="font-headline-md text-headline-md">Mumbai</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors" data-icon="location_on">location_on</span>
+</div>
+<div class="border-b border-secondary/20 pb-4 flex justify-between items-center group cursor-default">
+<div>
+<span class="font-label-caps text-label-caps text-secondary block">CAPITAL HUB</span>
+<p class="font-headline-md text-headline-md">Delhi</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors" data-icon="location_on">location_on</span>
+</div>
+<div class="border-b border-secondary/20 pb-4 flex justify-between items-center group cursor-default">
+<div>
+<span class="font-label-caps text-label-caps text-secondary block">TEXTILE CITY</span>
+<p class="font-headline-md text-headline-md">Surat</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors" data-icon="location_on">location_on</span>
+</div>
+<div class="border-b border-secondary/20 pb-4 flex justify-between items-center group cursor-default">
+<div>
+<span class="font-label-caps text-label-caps text-secondary block">SOUTHERN HUB</span>
+<p class="font-headline-md text-headline-md">Bengaluru</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors" data-icon="location_on">location_on</span>
+</div>
+<div class="border-b border-secondary/20 pb-4 flex justify-between items-center group cursor-default">
+<div>
+<span class="font-label-caps text-label-caps text-secondary block">EASTERN HUB</span>
+<p class="font-headline-md text-headline-md">Kolkata</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors" data-icon="location_on">location_on</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col gap-4 border-l-4 border-primary">
+<span class="font-label-caps text-label-caps text-primary">DISTRIBUTION INQUIRY</span>
+<p class="font-body-md">Interested in becoming a certified Geetanjali Heritage partner?</p>
+<a class="font-label-caps text-label-caps uppercase underline tracking-wider hover:text-primary transition-all" href="#">Download Partnership Deck</a>
+</div>
+</div>
+</section>
+<!-- Aesthetic Map Section (Decorative) -->
+<section class="w-full h-[500px] mb-section-gap relative overflow-hidden group">
+<div class="absolute inset-0 grayscale opacity-40 group-hover:opacity-60 transition-opacity duration-1000 bg-cover bg-center" data-alt="A sophisticated, minimalist architectural map of India rendered in charcoal and beige tones. The map features elegant hairline borders and subtle glowing dots marking major cities like Mumbai, Delhi, and Surat. The overall aesthetic is editorial and museum-like, emphasizing a sense of vast distribution and heritage presence through high-end digital design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPGsFdqiD6YBg0M0MYcgWYZtqgK4hF099fW-tz5C_ibviHbiMx6T4EL9mL7jNpPhtDgfPnzGWsfve-vpUfUdqhMzVje4ScLXaOzlw6wkl83mo1iryPHYMXKaMT3UjOWflXJxUjQ1TktJVA-2--PtJMsXH8crVs6RyW7Afa2441kWAp3jS9znxwRdW01LJT7Y_JIiRbOeB9athl0d3W1RLVbk-GsAy8wLA2kKMhzYx-a890IVzY1_tVY25FQrZJhacwF6AtWilGPXAh')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-12 max-w-sm">
+<span class="font-label-caps text-label-caps text-primary block mb-2">NETWORK DEPTH</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Serving 140+ Districts</h3>
+<p class="text-on-surface-variant mt-4">Our logistics network ensures every Indian household can access the durability and precision of Geetanjali engineering.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-12 max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-4 items-center md:items-start">
+<img alt="Geetanjali Heritage Logo" class="h-8 w-auto grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeWzGJGAz9hLdrXxI2MmwH-Kgev0rHcqq72m6wzLSiIH8trCOa9gEIak4kPlz7bIqCN9j9H9x-uB-8Wl5IgU_-9w_I9vwgPv9C2YSH8cF4X15Vgi8FoQe9LGLMuwddcQ0Y0uH8JWVpGvB2uvi-hGe-XPqhWo-hRIXKigpnE-bxqQQbqw6ymya8CR_reWX5fog2A71FpuMBafkVLpF5-WO3HOBDDtXpS1v2sjY_ZKuJc7-9452P5hoHqgyX-mJwdb2LP5Lwlpuppxz7"/>
+<p class="font-caption text-caption text-secondary dark:text-secondary-fixed-dim">
+                    © 2026 Geetanjali. Since 1997 Heritage.
+                </p>
+</div>
+<div class="flex gap-gutter items-center">
+<a class="font-caption text-caption text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed underline transition-all" href="https://instagram.com">Instagram</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed underline transition-all" href="mailto:harshhomeappliances@gmail.com">harshhomeappliances@gmail.com</a>
+</div>
+<div class="flex gap-6">
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for form inputs
+        const inputs = document.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').style.color = '#98001b';
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').style.color = '#5b403f';
+            });
+        });
+
+        // Parallax effect for the decorative map
+        window.addEventListener('scroll', () => {
+            const mapSection = document.querySelector('[data-alt*="architectural map of India"]');
+            if (mapSection) {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * 0.15;
+                mapSection.style.backgroundPositionY = `${rate}px`;
+            }
+        });
+    </script>
+</body></html>

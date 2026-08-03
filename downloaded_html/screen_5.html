@@ -1,0 +1,342 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Enquiry List - Geetanjali Kitchenware</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#ffd3d1",
+                        "on-surface-variant": "#5b403f",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "inverse-surface": "#2f3130",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-primary-fixed": "#410006",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-secondary-fixed": "#2d1600",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcbf",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#e3bebb",
+                        "platinum-gray": "#E5E5E5",
+                        "surface-dim": "#dadad8",
+                        "on-primary-fixed-variant": "#930019",
+                        "surface-variant": "#e3e2e0",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary": "#8c4f00",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "outline": "#8f6f6e",
+                        "on-error": "#ffffff",
+                        "heritage-red": "#BE1E2D",
+                        "canvas-white": "#FFFFFF",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary-container": "#663800",
+                        "on-background": "#1a1c1b",
+                        "on-surface": "#1a1c1b",
+                        "golden-ochre": "#F7941E",
+                        "surface-container-high": "#e9e8e6",
+                        "tertiary-container": "#626161",
+                        "surface": "#faf9f7",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffdad8",
+                        "tertiary": "#4a4949",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#be1e2d",
+                        "surface-tint": "#b91a2a",
+                        "surface-container": "#efeeec",
+                        "surface-bright": "#faf9f7",
+                        "charcoal-matte": "#2B2B2B",
+                        "on-tertiary-container": "#dfdddc",
+                        "surface-container-low": "#f4f3f1",
+                        "primary": "#98001b",
+                        "secondary-container": "#fd9924",
+                        "inverse-primary": "#ffb3b0",
+                        "background": "#faf9f7",
+                        "secondary-fixed-dim": "#ffb874"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "section-padding": "120px",
+                        "gutter": "32px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Bodoni Moda"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "label-md": ["Manrope"],
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "32px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .sleek-shadow:hover {
+            box-shadow: 0px 15px 50px rgba(43, 43, 43, 0.08);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-10deg); }
+            75% { transform: rotate(10deg); }
+        }
+        .hover\:animate-wiggle:hover {
+            animation: wiggle 0.4s ease-in-out;
+        }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .link-underline {
+            position: relative;
+            display: inline-block;
+        }
+        .link-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transform-origin: bottom right;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .link-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-heritage-red selection:text-white flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 glass-panel bg-canvas-white/80 w-full transition-all duration-500 ease-in-out">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-unit max-w-[1440px] mx-auto">
+<div class="flex items-center gap-8">
+<a class="block transition-transform duration-500 ease-in-out hover:scale-105" href="#">
+<img alt="Geetanjali" class="h-10 md:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6psdgF3xNBLR-BX3PvUsTvcSt6yw8mzwOMbAjsObsgt0drDw22IzB2-Omcira3UVQWC7WAETbHR1arFNGXOfWNruja5KTlG4aaEKpmHONS5VALfCbW3Ra5xbsYg0ELsjehsRWCTCt4Tm55dvJOC7jUUM3cFAXwMrANQyH96VZ8i9MkJvOX3o8Ay8kusOfFfGZ-WBUE69RQlNrpCP6lJQ92mG4qJ_p4__WNii2UQhtshkUMG9W0uXBGCrrhOZ5T30xHIe4imDO64x_">
+</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-charcoal-matte hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline" href="#">Pressure Cookers</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline" href="#">Cookware</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline" href="#">About Us</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a class="hidden md:inline-block font-label-caps text-label-caps text-heritage-red border-b border-golden-ochre pb-1 transition-all duration-300 ease-in-out opacity-80 hover:opacity-100 hover:scale-100 scale-95" href="#">Enquiry List</a>
+<div class="flex items-center gap-4 text-heritage-red">
+<button class="hover:text-golden-ochre transition-colors duration-300 ease-in-out focus:outline-none hover:-translate-y-0.5 transform">
+<span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+</button>
+<button class="hover:text-golden-ochre transition-colors duration-300 ease-in-out focus:outline-none hover:-translate-y-0.5 transform">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</button>
+</div>
+</div>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 overflow-hidden">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-platinum-gray pb-6 animate-fade-in-up delay-100">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-charcoal-matte mb-2">Your Enquiry Selection</h1>
+<p class="font-body-md text-body-md text-tertiary">Review the precision-engineered products you've selected.</p>
+</div>
+<button class="group flex items-center gap-2 mt-4 md:mt-0 font-label-caps text-label-caps text-tertiary hover:text-heritage-red transition-all duration-300 ease-in-out focus:outline-none hover:animate-wiggle">
+<span class="material-symbols-outlined text-[16px] group-hover:rotate-90 transition-transform duration-500 ease-in-out">close</span>
+                Clear All
+            </button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- List Area -->
+<div class="lg:col-span-8 flex flex-col gap-6 animate-fade-in-up delay-200">
+<!-- Product Row 1 -->
+<div class="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 bg-canvas-white rounded-lg sleek-shadow transition-all duration-500 ease-in-out hover:scale-[1.01] border border-surface-container-highest">
+<div class="w-full sm:w-32 h-32 flex-shrink-0 bg-surface-container-low rounded flex items-center justify-center overflow-hidden transition-transform duration-500 ease-in-out group-hover:bg-surface-container">
+<img class="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A high-end, minimalist studio photograph of a gleaming aluminum pressure cooker. The lighting is soft and diffused, highlighting the sleek metallic curves against a pure white background. Subtle reflections emphasize the premium build quality. Minimalist luxury aesthetic, corporate product photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTtl-LeNtzqUvo4wsq9cetlVTcigJDjif-IdxZfFSjoAN_8lNszUn28jxr2iuxfW2uDIs_1072rHRNBayPZ_fyEVka7nKOs-NfjDLXQI5scgW7Zo1F2IaCz33zghA49tuMuOTk5jFXXh0Opg2aECBszosuqo9oRXiUMEFupM9-L6_Optx7FuSu03hohQNMIO3-Jb4MzGw2_b_XMXT9DL_BztcbSIqCUcD3-_s2uHI8fuE191hRX6HxGz4QZvZGBmp0dHNdA2dh8bKO">
+</div>
+<div class="flex-grow flex flex-col justify-between w-full h-full pt-2">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-charcoal-matte transition-colors duration-300 ease-in-out group-hover:text-heritage-red">Tri-ply Inner Lid - Contura</h3>
+<button aria-label="Remove item" class="text-tertiary-fixed-dim hover:text-heritage-red hover:animate-wiggle transition-all duration-300 ease-in-out focus:outline-none ml-4">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-tertiary">Pressure Cookers • Premium Series</p>
+</div>
+<div class="mt-4 flex gap-2">
+<span class="inline-block bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-3 py-1 rounded-sm transition-colors duration-300 ease-in-out group-hover:bg-surface-dim">Size: 3L</span>
+<span class="inline-block bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-3 py-1 rounded-sm transition-colors duration-300 ease-in-out group-hover:bg-surface-dim">Induction Base</span>
+</div>
+</div>
+</div>
+<!-- Product Row 2 -->
+<div class="group flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 bg-canvas-white rounded-lg sleek-shadow transition-all duration-500 ease-in-out hover:scale-[1.01] border border-surface-container-highest">
+<div class="w-full sm:w-32 h-32 flex-shrink-0 bg-surface-container-low rounded flex items-center justify-center overflow-hidden transition-transform duration-500 ease-in-out group-hover:bg-surface-container">
+<img class="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A top-down, minimalist editorial shot of a dark non-stick Kadhai pan resting on a pristine white marble surface. Warm, subtle spotlighting creates a sleek shadow effect. The dark charcoal finish of the pan contrasts elegantly with the bright background, embodying minimal luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-KXVS6xfd_RmLLI2XssZXunaffoL-uCK_Yy4lsKrYMkx5Lc9msz9T-RJuMIe_-fDRjqbIIaJni54-mhhu-93VnXW38VF2uMByWgFSIMhgZqkM58ZZFuA-XeQ3P6GkDx6NTz1i7JpS2f-caVoQrO7O3-pyTThNJ6ecxMYJzTGlnl1PAI3yOC0ygtdHfV-S5NOOuZ9Kqb-qFKCqnmK0aQDtTankch6giO1QhCbKUn_DdFzmbCtNQhTSPLu1bo23U0TtXJl_85XTKOTy">
+</div>
+<div class="flex-grow flex flex-col justify-between w-full h-full pt-2">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-charcoal-matte transition-colors duration-300 ease-in-out group-hover:text-heritage-red">Hard Anodized Deep Kadhai</h3>
+<button aria-label="Remove item" class="text-tertiary-fixed-dim hover:text-heritage-red hover:animate-wiggle transition-all duration-300 ease-in-out focus:outline-none ml-4">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-tertiary">Cookware • Classic Range</p>
+</div>
+<div class="mt-4 flex gap-2">
+<span class="inline-block bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-3 py-1 rounded-sm transition-colors duration-300 ease-in-out group-hover:bg-surface-dim">Size: 2.5L</span>
+<span class="inline-block bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-3 py-1 rounded-sm transition-colors duration-300 ease-in-out group-hover:bg-surface-dim">Glass Lid</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Summary Sidebar -->
+<div class="lg:col-span-4 mt-12 lg:mt-0 animate-fade-in-up delay-300">
+<div class="bg-surface-container-low p-8 rounded-lg sticky top-32 border border-surface-container-highest transition-all duration-500 ease-in-out hover:shadow-lg">
+<h2 class="font-headline-sm text-headline-sm text-charcoal-matte mb-6 border-b border-platinum-gray pb-4">Enquiry Summary</h2>
+<div class="flex justify-between items-center mb-4 font-body-md text-body-md text-tertiary">
+<span class="">Total Items</span>
+<span class="font-bold text-charcoal-matte">2</span>
+</div>
+<div class="flex justify-between items-center mb-8 font-body-md text-body-md text-tertiary">
+<span class="">Estimated Response Time</span>
+<span class="text-charcoal-matte">Within 24 Hours</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary mb-8 text-sm">
+                        Submit your selection to our dedicated team via WhatsApp. We will provide pricing, availability, and personalized assistance based on your requirements.
+                    </p>
+<button class="w-full bg-heritage-red text-white font-label-caps text-label-caps py-4 px-6 rounded hover:bg-primary transition-all duration-300 ease-in-out flex items-center justify-center gap-3 group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-heritage-red active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300 ease-in-out">send</span>
+                        Enquire on WhatsApp
+                    </button>
+<div class="mt-6 text-center">
+<a class="font-label-caps text-label-caps text-tertiary hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline" href="#">Continue Browsing</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-highest dark:bg-charcoal-matte mt-auto overflow-hidden">
+<div class="w-full py-section-padding px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-[1440px] mx-auto reveal-on-scroll is-visible">
+<div class="md:col-span-4 flex flex-col justify-between">
+<div>
+<img alt="Geetanjali" class="h-10 md:h-12 w-auto object-contain mb-4 transition-transform duration-500 ease-in-out hover:scale-105 origin-left" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6psdgF3xNBLR-BX3PvUsTvcSt6yw8mzwOMbAjsObsgt0drDw22IzB2-Omcira3UVQWC7WAETbHR1arFNGXOfWNruja5KTlG4aaEKpmHONS5VALfCbW3Ra5xbsYg0ELsjehsRWCTCt4Tm55dvJOC7jUUM3cFAXwMrANQyH96VZ8i9MkJvOX3o8Ay8kusOfFfGZ-WBUE69RQlNrpCP6lJQ92mG4qJ_p4__WNii2UQhtshkUMG9W0uXBGCrrhOZ5T30xHIe4imDO64x_">
+<p class="font-body-md text-body-md text-charcoal-matte dark:text-platinum-gray opacity-80 max-w-sm">© 1997 Geetanjali Kitchenware. Precision Engineered.</p>
+</div>
+<p class="font-body-md text-body-md text-charcoal-matte dark:text-platinum-gray mt-12 md:mt-0">© 1997 Geetanjali Kitchenware. Precision Engineered.</p>
+</div>
+<div class="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-charcoal-matte dark:text-platinum-gray mb-2">Products</h5>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">Pressure Cookers</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">Cookware</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-charcoal-matte dark:text-platinum-gray mb-2">Company</h5>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">About Us</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">Contact</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="mailto:harshhomeappliances@gmail.com">Contact: harshhomeappliances@gmail.com</a></div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-charcoal-matte dark:text-platinum-gray mb-2">Legal</h5>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-charcoal-matte dark:text-platinum-gray mb-2">Actions</h5>
+<a class="font-label-caps text-label-caps text-heritage-red font-bold hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">Enquiry List</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 dark:text-platinum-gray/70 hover:text-golden-ochre transition-colors duration-300 ease-in-out link-underline w-max" href="#">Clear All</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>
+
+
+
+
+
+
+</body></html>

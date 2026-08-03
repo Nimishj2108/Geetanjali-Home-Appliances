@@ -1,0 +1,335 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Geetanjali - Enquiry List</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#ffd3d1",
+                        "on-surface-variant": "#5b403f",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "inverse-surface": "#2f3130",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-primary-fixed": "#410006",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-secondary-fixed": "#2d1600",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcbf",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#e3bebb",
+                        "platinum-gray": "#E5E5E5",
+                        "surface-dim": "#dadad8",
+                        "on-primary-fixed-variant": "#930019",
+                        "surface-variant": "#e3e2e0",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary": "#8c4f00",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "outline": "#8f6f6e",
+                        "on-error": "#ffffff",
+                        "heritage-red": "#BE1E2D",
+                        "canvas-white": "#FFFFFF",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary-container": "#663800",
+                        "on-background": "#1a1c1b",
+                        "on-surface": "#1a1c1b",
+                        "golden-ochre": "#F7941E",
+                        "surface-container-high": "#e9e8e6",
+                        "tertiary-container": "#626161",
+                        "surface": "#faf9f7",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffdad8",
+                        "tertiary": "#4a4949",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#be1e2d",
+                        "surface-tint": "#b91a2a",
+                        "surface-container": "#efeeec",
+                        "surface-bright": "#faf9f7",
+                        "charcoal-matte": "#2B2B2B",
+                        "on-tertiary-container": "#dfdddc",
+                        "surface-container-low": "#f4f3f1",
+                        "primary": "#98001b",
+                        "secondary-container": "#fd9924",
+                        "inverse-primary": "#ffb3b0",
+                        "background": "#faf9f7",
+                        "secondary-fixed-dim": "#ffb874"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "section-padding": "120px",
+                        "gutter": "32px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Bodoni Moda"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "label-md": ["Manrope"],
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "32px", "fontWeight": "400" }]
+                    },
+                    "animation": {
+                        'float': 'float 3s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards'
+                    },
+                    "keyframes": {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .stagger-1 { animation-delay: 0.1s; opacity: 0; }
+        .stagger-2 { animation-delay: 0.3s; opacity: 0; }
+        .stagger-3 { animation-delay: 0.5s; opacity: 0; }
+        
+        #shader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        #parallax-wrapper {
+            transition: transform 0.1s ease-out;
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="bg-transparent min-h-screen flex flex-col font-body-md text-body-md text-charcoal-matte relative overflow-x-hidden">
+<!-- Shader Background -->
+<div id="shader-container"><canvas width="1600" height="1462" style="display: block; width: 1280px; height: 1170px;"></canvas><canvas width="1600" height="1462" style="display: block; width: 1280px; height: 1170px;"></canvas><canvas width="1600" height="1462" style="display: block; width: 1280px; height: 1170px;"></canvas><canvas width="1600" height="1462" style="display: block; width: 1280px; height: 1170px;"></canvas></div>
+<!-- TopNavBar -->
+<nav class="bg-canvas-white/60 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-unit max-w-[1440px] mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-heritage-red tracking-tight" href="#"><img alt="Geetanjali Logo" class="h-6 md:h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEI-gYhxCnllJ7KpnypPhmC94aNCsCgFd8gzsnoZDOcJAAJugiwo8XXkCQO-zVDEMuHlmlA7Yv7pAyhL4d_T59pp3VWIC_QXJMPElWR1O09YMjeCnMi3GSIOHvuy6joWaSmPlv_B4Qcu-uGh8bWE85voM8d1j2chH16dNkEWRWxY6nLu2CCcnZ-lHP2cwdYonAWPDHKvXusg0wgaaTCmXz_7mR-I11ONG54_nLUkOdyP1eb9hOiYC6p1vHhlUbRNNqbGG16HtM8KWs"></a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-charcoal-matte hover:text-golden-ochre transition-colors duration-300" href="#">Pressure Cookers</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte hover:text-golden-ochre transition-colors duration-300" href="#">Cookware</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte hover:text-golden-ochre transition-colors duration-300" href="#">About Us</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-unit md:gap-gutter">
+<button class="hidden md:flex font-label-caps text-label-caps text-heritage-red border-b border-golden-ochre pb-1 opacity-80 scale-95 transition-all">
+                    Enquiry List
+                </button>
+<div class="flex items-center gap-unit">
+<button aria-label="shopping_cart" class="p-2 text-heritage-red hover:text-golden-ochre transition-colors duration-300">
+<span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+</button>
+<button aria-label="person" class="p-2 text-heritage-red hover:text-golden-ochre transition-colors duration-300">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content: Empty State -->
+<main class="flex-grow flex items-center justify-center py-section-padding px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-2xl w-full text-center flex flex-col items-center bg-canvas-white/40 backdrop-blur-sm p-12 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]" id="parallax-wrapper">
+<!-- Minimal Icon -->
+<div class="animate-float">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center mb-8 relative shadow-sm">
+<span class="material-symbols-outlined text-[48px] text-platinum-gray/80">soup_kitchen</span>
+<!-- Decorative accent -->
+<div class="absolute -right-2 -top-2 w-6 h-6 bg-canvas-white rounded-full flex items-center justify-center border border-surface-container-highest shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-golden-ochre">spark</span>
+</div>
+</div>
+</div>
+<!-- Heading -->
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-charcoal-matte mb-6 animate-fade-in-up stagger-1">
+                Your List Awaits its Treasure
+            </h1>
+<!-- Subtext -->
+<p class="font-body-lg text-body-lg text-charcoal-matte/70 mb-12 max-w-xl mx-auto animate-fade-in-up stagger-2">
+                Discover our meticulously crafted collections and add your preferred items to your enquiry list for a personalized consultation.
+            </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full animate-fade-in-up stagger-3">
+<a class="w-full sm:w-auto px-8 py-4 border border-charcoal-matte rounded-DEFAULT font-label-caps text-label-caps text-charcoal-matte hover:bg-canvas-white hover:text-heritage-red hover:border-heritage-red hover:scale-[1.02] hover:shadow-lg transition-all duration-500" href="#" style="transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);">
+                    Explore Pressure Cookers
+                </a>
+<a class="w-full sm:w-auto px-8 py-4 border border-charcoal-matte rounded-DEFAULT font-label-caps text-label-caps text-charcoal-matte hover:bg-canvas-white hover:text-heritage-red hover:border-heritage-red hover:scale-[1.02] hover:shadow-lg transition-all duration-500" href="#" style="transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);">
+                    Browse Cookware Collection
+                </a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest/80 backdrop-blur-md w-full py-section-padding px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-[1440px] mx-auto relative z-10">
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="font-headline-sm text-headline-sm text-heritage-red"><img alt="Geetanjali Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEI-gYhxCnllJ7KpnypPhmC94aNCsCgFd8gzsnoZDOcJAAJugiwo8XXkCQO-zVDEMuHlmlA7Yv7pAyhL4d_T59pp3VWIC_QXJMPElWR1O09YMjeCnMi3GSIOHvuy6joWaSmPlv_B4Qcu-uGh8bWE85voM8d1j2chH16dNkEWRWxY6nLu2CCcnZ-lHP2cwdYonAWPDHKvXusg0wgaaTCmXz_7mR-I11ONG54_nLUkOdyP1eb9hOiYC6p1vHhlUbRNNqbGG16HtM8KWs"></div>
+<p class="font-body-md text-body-md text-charcoal-matte">© 2026 Geetanjali Kitchenware. Precision Engineered.</p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-x-gutter gap-y-4 md:justify-end">
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 hover:text-golden-ochre transition-colors duration-300" href="#" style="transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);">Pressure Cookers</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 hover:text-golden-ochre transition-colors duration-300" href="#" style="transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);">Cookware</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 hover:text-golden-ochre transition-colors duration-300" href="#" style="transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);">About Us</a>
+<a class="font-label-caps text-label-caps text-heritage-red font-bold hover:text-golden-ochre transition-colors duration-300" href="#" style="transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);">Enquiry List</a>
+<a class="font-label-caps text-label-caps text-charcoal-matte/70 hover:text-golden-ochre transition-colors duration-300" href="mailto:harshhomeappliances@gmail.com" style="transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);">Contact: harshhomeappliances@gmail.com</a></div>
+</footer>
+<script>
+    // Parallax effect
+    document.addEventListener('DOMContentLoaded', () => {
+        const wrapper = document.getElementById('parallax-wrapper');
+        
+        document.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 50;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 50;
+            
+            wrapper.style.transform = `translate(${xAxis}px, ${yAxis}px)`;
+        });
+        
+        // Shader Setup
+        const container = document.getElementById('shader-container');
+        
+        const scene = new THREE.Scene();
+        const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+        
+        const renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        container.appendChild(renderer.domElement);
+
+        const geometry = new THREE.PlaneGeometry(2, 2);
+        
+        const vertexShader = `
+            varying vec2 v_texCoord;
+            void main() {
+                v_texCoord = uv;
+                gl_Position = vec4(position, 1.0);
+            }
+        `;
+
+        const fragmentShader = `
+precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+varying vec2 v_texCoord;
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Heritage Minimalist palette derived from #be1e2d
+    vec3 color1 = vec3(0.98, 0.976, 0.968); // surface (#faf9f7)
+    vec3 color2 = vec3(0.85, 0.85, 0.84);  // surface-dim (#dadad8)
+    vec3 accent = vec3(0.745, 0.117, 0.176); // heritage-red (#be1e2d)
+    
+    // Slow, organic movement
+    float noise = sin(uv.x * 3.0 + u_time * 0.2) * cos(uv.y * 2.0 + u_time * 0.3) * 0.5 + 0.5;
+    
+    // Blend background colors
+    vec3 color = mix(color1, color2, noise * 0.4);
+    
+    // Add a faint red glow from the bottom corner (Heritage red influence)
+    float dist = distance(uv, vec2(0.0, 0.0));
+    color = mix(color, accent, (1.0 - smoothstep(0.0, 1.2, dist)) * 0.03);
+    
+    gl_FragColor = vec4(color, 1.0);
+}
+`;
+
+        const uniforms = {
+            u_time: { value: 0.0 },
+            u_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+            u_mouse: { value: new THREE.Vector2(0, 0) }
+        };
+
+        const material = new THREE.ShaderMaterial({
+            vertexShader: vertexShader,
+            fragmentShader: fragmentShader,
+            uniforms: uniforms
+        });
+
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        document.addEventListener('mousemove', (event) => {
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+        });
+
+        function animate(time) {
+            requestAnimationFrame(animate);
+            
+            uniforms.u_time.value = time * 0.001;
+            
+            // Smoothly interpolate mouse position for shader
+            uniforms.u_mouse.value.x += (mouseX - uniforms.u_mouse.value.x) * 0.05;
+            uniforms.u_mouse.value.y += ((window.innerHeight - mouseY) - uniforms.u_mouse.value.y) * 0.05;
+            
+            renderer.render(scene, camera);
+        }
+
+        animate(0);
+
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            uniforms.u_resolution.value.set(window.innerWidth, window.innerHeight);
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+</body></html>

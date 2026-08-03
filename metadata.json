@@ -1,0 +1,6 @@
+{
+  "name": "Geetanjali Home Appliances",
+  "description": "Geetanjali Home Appliances — Top Pressure Cooker & Cookware Manufacturer in Delhi NCR by Harsh Home Appliances. 30+ years experience, ISI certified triply steel pressure cookers & honeycomb cookware.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

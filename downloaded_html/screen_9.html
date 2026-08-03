@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Tri-ply Collection | Geetanjali</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#2f3130",
+                      "on-surface": "#1a1c1b",
+                      "secondary-fixed-dim": "#ffb874",
+                      "surface-variant": "#e3e2e0",
+                      "background": "#faf9f7",
+                      "surface-container-high": "#e9e8e6",
+                      "surface-dim": "#dadad8",
+                      "primary-fixed": "#ffdad8",
+                      "on-secondary-fixed-variant": "#6b3b00",
+                      "outline-variant": "#e3bebb",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-surface-variant": "#5b403f",
+                      "surface-tint": "#b91a2a",
+                      "secondary-container": "#fd9924",
+                      "error-container": "#ffdad6",
+                      "surface-bright": "#faf9f7",
+                      "on-secondary-container": "#663800",
+                      "on-tertiary-container": "#dfdddc",
+                      "surface": "#faf9f7",
+                      "tertiary": "#4a4949",
+                      "platinum-gray": "#E5E5E5",
+                      "canvas-white": "#FFFFFF",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "primary": "#98001b",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#626161",
+                      "charcoal-matte": "#2B2B2B",
+                      "secondary-fixed": "#ffdcbf",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed": "#e4e2e1",
+                      "heritage-red": "#BE1E2D",
+                      "primary-container": "#be1e2d",
+                      "surface-container": "#efeeec",
+                      "inverse-on-surface": "#f1f1ef",
+                      "golden-ochre": "#F7941E",
+                      "inverse-primary": "#ffb3b0",
+                      "on-primary-fixed": "#410006",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "on-primary-container": "#ffd3d1",
+                      "surface-container-low": "#f4f3f1",
+                      "surface-container-highest": "#e3e2e0",
+                      "on-secondary-fixed": "#2d1600",
+                      "on-secondary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "outline": "#8f6f6e",
+                      "on-primary-fixed-variant": "#930019",
+                      "on-error": "#ffffff",
+                      "secondary": "#8c4f00",
+                      "on-error-container": "#93000a",
+                      "on-background": "#1a1c1b",
+                      "primary-fixed-dim": "#ffb3b0",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "80px",
+                      "gutter": "32px",
+                      "section-padding": "120px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Bodoni Moda"
+                      ],
+                      "label-caps": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "headline-sm": [
+                              "Bodoni Moda"
+                      ],
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "label-md": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .gallery-effect {
+            background: linear-gradient(180deg, theme('colors.canvas-white') 0%, theme('colors.surface-container-lowest') 100%);
+        }
+        
+        /* Entrance Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .fade-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Ambient Motion */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .sidebar-slide {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .museum-border {
+            border: 1px solid #e3bebb;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col" data-mode="connect">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-canvas-white/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+<div class="flex items-center gap-12">
+<a class="block w-40 md:w-48 transition-transform duration-300 hover:scale-105" href="{{DATA:SCREEN:SCREEN_242}}">
+<img alt="Geetanjali Heritage Logo" class="w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeWzGJGAz9hLdrXxI2MmwH-Kgev0rHcqq72m6wzLSiIH8trCOa9gEIak4kPlz7bIqCN9j9H9x-uB-8Wl5IgU_-9w_I9vwgPv9C2YSH8cF4X15Vgi8FoQe9LGLMuwddcQ0Y0uH8JWVpGvB2uvi-hGe-XPqhWo-hRIXKigpnE-bxqQQbqw6ymya8CR_reWX5fog2A71FpuMBafkVLpF5-WO3HOBDDtXpS1v2sjY_ZKuJc7-9452P5hoHqgyX-mJwdb2LP5Lwlpuppxz7"/>
+</a>
+<div class="hidden lg:flex gap-8">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_242}}">Home</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-heritage-red border-b border-heritage-red pb-1" href="{{DATA:SCREEN:SCREEN_240}}">Pressure Cookers</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_244}}">Cookware</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_122}}">About Us</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_41}}">Contact Us</a>
+</div>
+</div>
+<div class="flex items-center gap-6 text-on-surface">
+<button class="material-symbols-outlined transition-transform hover:scale-110 hidden md:block">search</button>
+<div class="relative cursor-pointer group" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-primary text-3xl group-active:opacity-80">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-heritage-red text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold" id="enquiry-badge">3</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow gallery-effect mt-24">
+<!-- Sub Navigation -->
+<nav class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto py-8">
+<div class="flex flex-wrap gap-8 border-b border-surface-variant pb-4">
+<a class="text-on-surface-variant font-label-caps tracking-widest hover:text-heritage-red transition-colors" href="{{DATA:SCREEN:SCREEN_246}}">STAINLESS STEEL</a>
+<a class="text-heritage-red font-label-caps tracking-widest border-b-2 border-heritage-red pb-4" href="#">TRI-PLY COLLECTION</a>
+<a class="text-on-surface-variant font-label-caps tracking-widest hover:text-heritage-red transition-colors uppercase" href="#">Hard Anodized</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="py-12 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto text-center md:text-left">
+<h1 class="font-display-lg text-display-lg text-charcoal-matte mb-6 fade-up is-visible" style="transition-delay: 0.1s;">The Tri-ply Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl fade-up is-visible" style="transition-delay: 0.2s;">
+                Engineered with SAS technology (Stainless Steel - Aluminum - Stainless Steel) for even heat distribution and maximum energy efficiency.
+            </p>
+<div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start fade-up is-visible" style="transition-delay: 0.3s;">
+<span class="bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-4 py-2 rounded-full">3-Layer Construction</span>
+<span class="bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-4 py-2 rounded-full">Induction Compatible</span>
+<span class="bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-4 py-2 rounded-full">Mirror Finish</span>
+<span class="bg-platinum-gray text-charcoal-matte font-label-caps text-label-caps px-4 py-2 rounded-full">Cool-Touch Handles</span>
+</div>
+</header>
+<!-- Product Grid -->
+<section class="py-12 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product 1: Tri-ply Inner Lid: Contura Shape -->
+<article class="bg-canvas-white rounded-lg overflow-hidden flex flex-col border border-surface-variant transition-all duration-500 hover:-translate-y-2 hover:shadow-[0px_20px_40px_rgba(43,43,43,0.08)] fade-up is-visible" style="transition-delay: 0.2s;">
+<div class="h-64 md:h-80 w-full relative">
+<img alt="A professional product catalog photo of a tri-ply stainless steel pressure cooker (Contura Shape, Inner Lid) with Geetanjali brand logo centered." class="absolute inset-0 w-full h-full object-cover animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRMgB5nk0dv8DIVXl2pRR6EbrbgB-3y8hsVmJLo8qFykfNoSn5T-9Y0OO8HVFZ0ro21eyzRZhtXBrOoLl8LqOruJiPjD0Nyq_gCGfmLkMP0c-M4phSVYdJr7BfkOzddBX6WAlffLB2HaDrtQA1zsaXHA3K4mRG--XaYfkmZhzQNsuHaaj_AMJrB35_mNkUssgdqMbuZ8aYjxcNYgekRw0vOfkiE8qIWgOJdFz1ajkyvE1fT4feyS-pFR0_gM6uvVMKU9GmuajWUXmW"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-charcoal-matte mb-2">Tri-ply Inner Lid - Contura</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Contura Shape</p>
+<div class="mb-8">
+<span class="font-label-md text-label-md text-tertiary block mb-3">Select Size</span>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">1.5L</button>
+<button class="w-10 h-10 rounded border border-heritage-red text-heritage-red flex items-center justify-center font-label-md text-label-md bg-heritage-red/5 transition-colors duration-300">2L</button>
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">3L</button>
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">5L</button>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<button class="add-to-enquiry w-full bg-heritage-red text-canvas-white font-label-caps text-label-caps py-4 rounded flex items-center justify-center gap-2 hover:bg-primary-container active:scale-95 transition-all duration-300 ease-[0.4,0,0.2,1]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                                Add to Enquiry List
+                            </button>
+<button class="w-full border border-charcoal-matte text-charcoal-matte font-label-caps text-label-caps py-4 rounded flex items-center justify-center gap-2 hover:bg-surface-container-highest active:scale-95 transition-all duration-300 ease-[0.4,0,0.2,1]">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                Enquire on WhatsApp
+                            </button>
+</div>
+</div>
+</article>
+<!-- Product 2: Tri-ply Outer Lid: Regular Shape -->
+<article class="bg-canvas-white rounded-lg overflow-hidden flex flex-col border border-surface-variant transition-all duration-500 hover:-translate-y-2 hover:shadow-[0px_20px_40px_rgba(43,43,43,0.08)] fade-up is-visible" style="transition-delay: 0.3s;">
+<div class="h-64 md:h-80 w-full relative">
+<img alt="A professional product catalog photo of a tri-ply stainless steel pressure cooker (Regular Shape, Outer Lid) with Geetanjali brand logo centered." class="absolute inset-0 w-full h-full object-cover animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGhtfFXrx1AZ8FcNrypK2Xnl_SN8oEdQ9LkZeDIhaTLv4OA5bFIj1RTphMDOojsHygPB11fwKZMpFPkH7nYWIfMBrSGD7PHc2Ffq3eqr0a5T14pfM45ZM2POia1ADdiKNys_ey-6BjfAfqXNl7c24vVxhJz5X4Oxo3JBvilqfUADq_vbFN1Vmo30lqHdqAV-zsika3n8XBNQO3p5_8OOZaY-KXVusczCELx-eKeMguCC6PhECQbQcpMfDpinVxoH9RqJF8oKEs-MFY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-charcoal-matte mb-2">Tri-ply Outer Lid - Regular</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Regular Shape</p>
+<div class="mb-8">
+<span class="font-label-md text-label-md text-tertiary block mb-3">Select Size</span>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">1.5L</button>
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">2L</button>
+<button class="w-10 h-10 rounded border border-heritage-red text-heritage-red flex items-center justify-center font-label-md text-label-md bg-heritage-red/5 transition-colors duration-300">3L</button>
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">5L</button>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<button class="add-to-enquiry w-full bg-heritage-red text-canvas-white font-label-caps text-label-caps py-4 rounded flex items-center justify-center gap-2 hover:bg-primary-container active:scale-95 transition-all duration-300 ease-[0.4,0,0.2,1]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                                Add to Enquiry List
+                            </button>
+<button class="w-full border border-charcoal-matte text-charcoal-matte font-label-caps text-label-caps py-4 rounded flex items-center justify-center gap-2 hover:bg-surface-container-highest active:scale-95 transition-all duration-300 ease-[0.4,0,0.2,1]">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                Enquire on WhatsApp
+                            </button>
+</div>
+</div>
+</article>
+<!-- Product 3: Tri-ply Outer Lid: Handi Shape -->
+<article class="bg-canvas-white rounded-lg overflow-hidden flex flex-col border border-surface-variant transition-all duration-500 hover:-translate-y-2 hover:shadow-[0px_20px_40px_rgba(43,43,43,0.08)] fade-up is-visible" style="transition-delay: 0.4s;">
+<div class="h-64 md:h-80 w-full relative">
+<img alt="A professional product catalog photo of a tri-ply stainless steel pressure cooker (Handi Shape, Outer Lid) with Geetanjali brand logo centered." class="absolute inset-0 w-full h-full object-cover animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVShQR0y5GmuDnPO3Q5mSZmXn7qhtH7QnzrYr6UKVDLjHvFipkEXHM2FHDmh0bajz39KA2yeOBKCAltI0LtFt95w6ss1WSo-ICjtsAVGbnGcri20QGc36HG019aGp1eG8Ro7ZcCYtdH-s8DVr4aCI-OHZJW5H0yeCjVEeaLBC6O_3RmZPAICwI9Doh7Jb3vHfm3I2TyHI_IpC779yMt8yereyqSeMo6gu7WzycH8g_Ne4-iEgzhcTZM8HEQDuJcBNv2irYEtZRVvKs"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-charcoal-matte mb-2">Tri-ply Outer Lid - Handi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Handi Shape</p>
+<div class="mb-8">
+<span class="font-label-md text-label-md text-tertiary block mb-3">Select Size</span>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">1.5L</button>
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">2L</button>
+<button class="w-10 h-10 rounded border border-platinum-gray flex items-center justify-center font-label-md text-label-md hover:border-heritage-red focus:border-heritage-red hover:text-heritage-red transition-colors duration-300">3L</button>
+<button class="w-10 h-10 rounded border border-heritage-red text-heritage-red flex items-center justify-center font-label-md text-label-md bg-heritage-red/5 transition-colors duration-300">5L</button>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<button class="add-to-enquiry w-full bg-heritage-red text-canvas-white font-label-caps text-label-caps py-4 rounded flex items-center justify-center gap-2 hover:bg-primary-container active:scale-95 transition-all duration-300 ease-[0.4,0,0.2,1]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                                Add to Enquiry List
+                            </button>
+<button class="w-full border border-charcoal-matte text-charcoal-matte font-label-caps text-label-caps py-4 rounded flex items-center justify-center gap-2 hover:bg-surface-container-highest active:scale-95 transition-all duration-300 ease-[0.4,0,0.2,1]">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                Enquire on WhatsApp
+                            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Enquiry Sidebar -->
+<aside class="fixed right-0 top-0 h-full w-[400px] max-w-full bg-white/80 backdrop-blur-2xl border-l border-outline-variant/30 shadow-2xl z-[100] flex flex-col p-8 sidebar-slide translate-x-full" id="side-nav">
+<div class="flex flex-col space-y-4 mb-8">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-display-lg text-primary text-2xl leading-none">Enquiry List</h2>
+<p class="font-body-md text-body-sm text-on-surface-variant/70">Premium Kitchenware Archive</p>
+</div>
+<button class="p-2 hover:bg-surface-variant/50 rounded-full transition-colors" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-on-surface-variant">close</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between border-b border-outline-variant/10 mb-6">
+<button class="flex flex-col items-center py-2 px-1 border-b-2 border-primary group">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">list_alt</span>
+<span class="text-[10px] font-label-caps mt-1 text-primary">ITEMS</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 text-on-surface-variant/40 hover:text-on-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-xl">settings_input_component</span>
+<span class="text-[10px] font-label-caps mt-1">SPECS</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 text-on-surface-variant/40 hover:text-on-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-xl">local_shipping</span>
+<span class="text-[10px] font-label-caps mt-1">SHIP</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 text-on-surface-variant/40 hover:text-on-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-xl">help_outline</span>
+<span class="text-[10px] font-label-caps mt-1">HELP</span>
+</button>
+</div>
+<div class="flex-grow overflow-y-auto space-y-6 pr-2">
+<div class="flex space-x-4 items-center group">
+<div class="w-20 h-20 bg-surface-container-low museum-border overflow-hidden flex-shrink-0 transition-transform group-hover:scale-105">
+<img alt="Pressure Cooker 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvgXpRK9dthNJnOWEXf-umKYz7QTSBkpoTPrI0PgxGcO3DkDzkdXok9aL5fh5BlsJX31dlnHzUZ0sZDn4IzhYVG9PH1BvuBntCaobhzHNxnSnDO10yReg69mFQ0VL89CfPan5qMuBg5mlB7TfctvXmJ80Ir3yU0oBPNSnv9k94hcfLIMkprWaorf_s779Kb4Fi74PfYP_1rCTwaaYoE_EVIxzGHfEdxtr8FVMwj9P8n6ANOk6hcGncFYdGs"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-body-md text-body-sm font-semibold text-primary">Heritage Stainless 5L</h4>
+<p class="text-[12px] text-on-surface-variant/70 uppercase tracking-widest font-label-caps">SKU: SS-H5-2026</p>
+<div class="flex items-center mt-1 text-primary">
+<span class="text-xs font-bold underline cursor-pointer">Remove</span>
+</div>
+</div>
+</div>
+<div class="flex space-x-4 items-center group">
+<div class="w-20 h-20 bg-surface-container-low museum-border overflow-hidden flex-shrink-0 transition-transform group-hover:scale-105">
+<img alt="Pressure Cooker 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLseJKqnseZs39yEEkwID70bip_R3zrspaKUBsokeU4njb_D6kWW6yhOHvv6RvJlgwZmS1kK0WuMgrLulKK4olqKn7DBRGFruUTFAp8wR-vgbTvtzR89naPzHiEl-B1iNVxSjjOWeLzXt3nClJ2kkzY_sAmk4wmub7HxsMRrOFEw5d6u70zM4MM54qNRFn9S3Wp6DDH4cKI4A15CCJLRM0LmI7EVMaHdcErS21wqNDWZ287Z6twQryJ-DEst"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-body-md text-body-sm font-semibold text-primary">Elite Tri-ply 3L</h4>
+<p class="text-[12px] text-on-surface-variant/70 uppercase tracking-widest font-label-caps">SKU: TP-E3-2026</p>
+<div class="flex items-center mt-1 text-primary">
+<span class="text-xs font-bold underline cursor-pointer">Remove</span>
+</div>
+</div>
+</div>
+<div class="flex space-x-4 items-center group">
+<div class="w-20 h-20 bg-surface-container-low museum-border overflow-hidden flex-shrink-0 transition-transform group-hover:scale-105">
+<img alt="Pressure Cooker 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLv-eJpIMU_GEwqV9xRd7XYgSCsM2W3DCpQ0cMOu_LJ1wSMq2oeOwk3Q6ukIC69NQVT4MSq1LO5kDimwNfOUElSsBaFvYJ4Ru3WmvjH4-KlsaOjERy4mjHfXcF1Z53Vw2hE-ibkb_-tvohduDPyXuzw3ZJX8W8hSBZG4juvUyFn-SzCh-EhuYEXeW3A9rUY7n6-kHvYZYo-n2ZdTtRC4JcQm9I5HiX5s1k_fm9ZGc7fB2JmJcD7PARrf5K06"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-body-md text-body-sm font-semibold text-primary">Classic Anodized 7L</h4>
+<p class="text-[12px] text-on-surface-variant/70 uppercase tracking-widest font-label-caps">SKU: HA-C7-2026</p>
+<div class="flex items-center mt-1 text-primary">
+<span class="text-xs font-bold underline cursor-pointer">Remove</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 space-y-4">
+<button class="block w-full bg-primary text-white py-4 font-label-caps text-[13px] tracking-[0.2em] hover:bg-primary-container transition-all duration-300 shadow-lg text-center uppercase">
+VIEW FULL ENQUIRY LIST
+</button>
+<div class="flex justify-between px-2">
+<button class="flex items-center space-x-2 text-on-surface-variant/60 hover:text-error transition-colors group">
+<span class="material-symbols-outlined text-sm">delete</span>
+<span class="font-label-caps text-[10px]">CLEAR ALL</span>
+</button>
+<button class="flex items-center space-x-2 text-on-surface-variant/60 hover:text-primary transition-colors group" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-sm">close</span>
+<span class="font-label-caps text-[10px]">CLOSE</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest dark:bg-charcoal-matte full-width bottom-0 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-section-padding max-w-[1440px] mx-auto text-on-surface dark:text-surface-variant font-body-md text-body-md">
+<div class="flex flex-col space-y-4">
+<img alt="Geetanjali Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3-2yjz7bMkcM0lo4iB5GXmqxIQi2fFMj7eAne9fyZoE1dj_VN8F78NsiGjz_OmmRBvvkRM1ks5hBzQKiqwM4Oll06HLyt4RuKaODLx6c2bZlQ-41aeHEBflWMwymMLtxyFBuQzdlAAmL8G309OUtVfCwIEHMc9aeGfjcMJEXj8FX-iliKg8MapZUoqtqqcklT-VpuxwjY_mNcS2hNuRTqsoslL74d6PPiIPUuNUOxdhCyNHGBwHCGMukjMV4KqleteBI7LVgsbZ7O"/>
+<p class="">© 2026 Geetanjali. Since 1997 Heritage.</p>
+</div>
+<div class="flex flex-col space-y-4 md:col-span-2">
+<ul class="flex flex-col md:flex-row gap-4 md:gap-8 justify-start md:justify-end text-on-tertiary-fixed-variant dark:text-surface-variant">
+<li class=""><a class="hover:text-golden-ochre underline-offset-4 hover:underline transition-all Ease-in-out duration-300" href="#">Contact: harshhomeappliances@gmail.com</a></li>
+<li class=""><a class="hover:text-golden-ochre underline-offset-4 hover:underline transition-all Ease-in-out duration-300" href="#">Instagram</a></li>
+<li class=""><a class="hover:text-golden-ochre underline-offset-4 hover:underline transition-all Ease-in-out duration-300" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Simple reveal on scroll observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Enquiry Interaction logic
+        let enquiryCount = 3;
+        const enquiryBadge = document.getElementById('enquiry-badge');
+        const sidebar = document.getElementById('side-nav');
+
+        document.querySelectorAll('.add-to-enquiry').forEach(button => {
+            button.addEventListener('click', () => {
+                enquiryCount++;
+                if(enquiryBadge) enquiryBadge.textContent = enquiryCount;
+                // Reveal the sidebar
+                if(sidebar) sidebar.classList.remove('translate-x-full');
+            });
+        });
+    });
+
+    // Sidebar Toggle function
+    function toggleSidebar() {
+        const sidebar = document.getElementById('side-nav');
+        if(sidebar) sidebar.classList.toggle('translate-x-full');
+    }
+</script>
+</body></html>

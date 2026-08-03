@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Heritage | Geetanjali Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-fixed": "#ffdad8",
+                "secondary": "#8c4f00",
+                "surface-container-low": "#f4f3f1",
+                "outline-variant": "#e3bebb",
+                "charcoal-matte": "#2B2B2B",
+                "on-secondary": "#ffffff",
+                "tertiary-fixed-dim": "#c8c6c5",
+                "on-tertiary": "#ffffff",
+                "golden-ochre": "#F7941E",
+                "background": "#faf9f7",
+                "secondary-container": "#fd9924",
+                "surface-variant": "#e3e2e0",
+                "secondary-fixed-dim": "#ffb874",
+                "on-secondary-fixed": "#2d1600",
+                "surface-container-high": "#e9e8e6",
+                "outline": "#8f6f6e",
+                "on-primary-fixed": "#410006",
+                "secondary-fixed": "#ffdcbf",
+                "on-surface-variant": "#5b403f",
+                "surface-container-highest": "#e3e2e0",
+                "error-container": "#ffdad6",
+                "inverse-surface": "#2f3130",
+                "on-error": "#ffffff",
+                "heritage-red": "#BE1E2D",
+                "surface-bright": "#faf9f7",
+                "tertiary-fixed": "#e4e2e1",
+                "surface-container": "#efeeec",
+                "on-primary-fixed-variant": "#930019",
+                "primary-fixed-dim": "#ffb3b0",
+                "inverse-primary": "#ffb3b0",
+                "canvas-white": "#FFFFFF",
+                "tertiary": "#4a4949",
+                "tertiary-container": "#626161",
+                "on-primary-container": "#ffd3d1",
+                "surface-dim": "#dadad8",
+                "primary": "#98001b",
+                "surface": "#faf9f7",
+                "on-secondary-container": "#663800",
+                "on-secondary-fixed-variant": "#6b3b00",
+                "on-background": "#1a1c1b",
+                "surface-tint": "#b91a2a",
+                "on-tertiary-container": "#dfdddc",
+                "platinum-gray": "#E5E5E5",
+                "on-primary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#1a1c1b",
+                "on-tertiary-fixed-variant": "#474746",
+                "inverse-on-surface": "#f1f1ef",
+                "on-tertiary-fixed": "#1b1c1c",
+                "error": "#ba1a1a",
+                "on-error-container": "#93000a",
+                "primary-container": "#be1e2d"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "section-padding": "120px",
+                "margin-mobile": "20px",
+                "gutter": "32px",
+                "unit": "8px",
+                "margin-desktop": "80px",
+                "container-max": "1440px"
+            },
+            "fontFamily": {
+                "label-md": ["Manrope"],
+                "headline-lg": ["Bodoni Moda"],
+                "body-md": ["Manrope"],
+                "headline-md": ["Bodoni Moda"],
+                "label-caps": ["Manrope"],
+                "headline-sm": ["Bodoni Moda"],
+                "headline-lg-mobile": ["Bodoni Moda"],
+                "body-lg": ["Manrope"],
+                "display-lg": ["Bodoni Moda"],
+                "display-xl": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "display-xl": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .museum-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 32px;
+        }
+        .sidebar-slide {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .museum-border {
+            border: 1px solid #e3bebb;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
+<!-- Integrated Navigation -->
+<header class="bg-surface/80 backdrop-blur-md border-b border-outline-variant fixed top-0 left-0 right-0 z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center gap-12">
+<a href="#">
+<img alt="Geetanjali Heritage Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLuBbtSZ50NU0Bw5JRWyefPuyGSrEperkO3hhQUT9cFHaK9EMVEww0-OukBj0FXo9BsTccuWW4SjxKpq6g-BiWwPtb8ur0lv8CUPeuuMPrvrVjIURC2ozaDgbPLjfDAYmyfSuWhSgzqbiFC2Nf9WfV3tt48pJfc5dCv5BBnkgkI8g1eyHII3QGkwidBjaQU-Y6T03cYea2jNXWJx68Oj3EXPSBqrSNNng9M24x6d_IzyDRyAWh3VHwH2Y5dF"/>
+</a>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Pressure Cookers</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Cookware</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary border-b border-primary pb-1 transition-colors duration-300" href="#">About Us</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact Us</a>
+</div>
+</div>
+<div class="flex items-center gap-6 text-on-surface">
+<button class="material-symbols-outlined hover:opacity-80 transition-all">search</button>
+<div class="relative cursor-pointer group" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-primary text-3xl group-active:opacity-80">shopping_bag</span>
+<span class="absolute -top-2 -right-2 bg-primary text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold" id="enquiry-badge">3</span>
+</div>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop pt-24">
+<!-- Hero Section: Our Heritage (Asymmetrical Monograph Style) -->
+<section class="mt-24 mb-section-padding">
+<div class="museum-grid">
+<div class="col-span-12 md:col-span-5 flex flex-col justify-end pb-12">
+<span class="font-label-caps text-label-caps text-secondary mb-4 uppercase">ESTABLISHED 1997</span>
+<h1 class="font-display-xl text-display-xl leading-tight">Our Heritage.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-8 max-w-md">
+                    A narrative of precision, chronicling three decades of refined craftsmanship and intentional design in the heart of the modern kitchen.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-7">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container">
+<img alt="Editorial image showing heritage cookware" class="w-full h-full object-cover grayscale-[10%] hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_LcYg8oi0gIIGCbumTvtCuU09nJdwgFWkt8E8A_Fxe5i7PjpyC3I2FKJtsD26JhrjFst-HZhADHp2eYn1Ks3RBe7CbwwSPzfcrLOmAodF0vOHB-56D0JNQ8-unaTjJAjMxiTuf3Yt09_l7r5iBYkGQWzuXhrVyIe67iytrnlsXGnkDhg0bnG_qCSbIu_8Upq0hBW0V_nd267BmJxp9praLjtNZO8-9UX0bOpEcT-GRmwMjkIxenrphwjgHoIFuTy7tTxfyIfzxdyg"/>
+</div>
+<div class="mt-6 border-l border-secondary pl-6">
+<p class="font-label-md text-label-md italic text-on-surface-variant">Fig. 01 — Tactile Interaction. A study of human connection with high-grade stainless steel components.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: The Journey (Editorial Archival Section) -->
+<section class="mb-section-padding">
+<div class="museum-grid">
+<div class="col-span-12 md:col-span-7 mb-12 md:mb-0">
+<div class="overflow-hidden bg-surface-container museum-border">
+<img alt="{{DATA:IMAGE:IMAGE_133.Alt Text}}" class="w-full aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgjypWgpRmKC1vbzLyNIHUqeBGYwy4MW6614TJlihLdYTZcpY6Tdj5F8CjACQrDwEBkEFWdlklNysj4F1TXgW1gMPu0QyJ6okmDUBwWoW3GhFC5niNOqMObGEVPFGxRxr-6K7XKAcK-djgQmkY94wi4cY_tgeN0WIBB1f20POTfuQ8-Yufw-mdyapbePKNljKnN4JYysA7neVISqczqvwcaZMK_X168OkhBD7biS6PIpxRpsjvpBRVzZ5cAqynkEMltNMeAdEgDJb1"/>
+</div>
+<div class="mt-4">
+<span class="font-label-caps text-[10px] text-on-surface-variant/60 uppercase">Archival Plate 02 — Metalworker Workshop, c. 1997</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 md:col-start-9 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg mb-8">The Journey</h2>
+<div class="space-y-10">
+<div class="border-l-2 border-primary pl-6">
+<span class="font-label-caps text-secondary text-xs uppercase mb-2 block">1997 Foundation</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Founded in the artisan districts, Geetanjali began with a single vision: to transform industrial-grade materials into culinary heirlooms.
+                        </p>
+</div>
+<div class="border-l-2 border-outline-variant pl-6">
+<span class="font-label-caps text-on-surface-variant/60 text-xs uppercase mb-2 block">Engineering Evolution</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            The introduction of tri-ply technology marked a pivot toward metallurgical perfection, ensuring thermal precision in every vessel.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Engineering Integrity (Macro Detail Section) -->
+<section class="mb-section-padding bg-surface-container-lowest py-24 -mx-margin-desktop px-margin-desktop">
+<div class="museum-grid items-center">
+<div class="col-span-12 md:col-span-4 order-2 md:order-1">
+<h2 class="font-headline-lg text-headline-lg mb-8">Engineering Integrity</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
+                    Our commitment to high-density metallurgical bonding ensures that every piece withstands the test of time and high-pressure environments. Every handle, rivet, and seal is engineered to micron-perfect tolerances.
+                </p>
+<div class="grid grid-cols-1 gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">verified</span>
+<div>
+<h4 class="font-label-md font-bold uppercase tracking-tight">Micron-Perfect Seals</h4>
+<p class="font-label-md text-on-surface-variant/70">Pressure retention optimized through precision gaskets and aerospace-grade valves.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-7 md:col-start-6 order-1 md:order-2 mb-12 md:mb-0">
+<div class="aspect-square md:aspect-auto overflow-hidden museum-border">
+<img alt="{{DATA:IMAGE:IMAGE_132.Alt Text}}" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU_Drewz4jTvnl6KSVmudt-3nE1aSj80dZO7O5lNmTyAG0iOIrlNh_3XyBaQwDw8EYM7S-shQRRj53XZQdFQj6-aHN2y-aY3SXY67-fFLmFcigj8_-r0sUgX_sKitMkS4anMa9Tn_lfrjgy4-tevggZczReDkvwQUi2KSGoI4jvrX6ibBQnPpCHvJf0lmF1zkmxqAt0qbiwFMxVrrqqZZhmRtqvdCTBPiHp5UXYbsQb9daknYu2Ypin24c8NGjoULqK3iW4x99hPPU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Section (Asymmetrical Minimalist) -->
+<section class="mb-section-padding">
+<div class="museum-grid">
+<div class="col-span-12 md:col-span-8 md:col-start-3 text-center border-y border-outline-variant py-20">
+<p class="font-display-lg text-headline-lg italic text-on-surface leading-tight">
+                    "Excellence is not an act, but a habit practiced daily for thirty years."
+                </p>
+<div class="mt-8 h-[1px] w-24 bg-primary mx-auto"></div>
+<span class="font-label-caps text-secondary mt-6 block uppercase tracking-[0.3em]">The Heritage Philosophy</span>
+</div>
+</div>
+</section>
+<!-- Architectural Section -->
+<section class="mb-section-padding">
+<div class="museum-grid items-center">
+<div class="col-span-12 md:col-span-6 relative">
+<div class="bg-surface-variant w-full h-[600px] overflow-hidden museum-border">
+<img alt="Architectural Kitchenware" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYQfQEmCODeJ-aI2qXlp2shbnSVBRwZ_c9WTaIfDEJlgyPLnHma1QzpJZg4FXs63hn7_TSOYPcwCRhEdLWTcNdjkH8nn65uqix_z7-FyI5RsKGq2nfr-7-YKz5eKonukab6EOEO1e2rVX9hHic9YbjRu695YO1QLFvIic2Ij3puY6ZQFSGwCi4YEscp4dxioU9t3q7U9Mqbe6K-qNxF-CX4c6jMA9dv4048SInKhguf-0F28t5akBJxVMu6DjoSaH8HT9JNJeGBp0e"/>
+</div>
+<div class="absolute bottom-12 -right-6 bg-surface p-8 border border-outline-variant shadow-sm max-w-[280px] hidden md:block">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-50 block mb-2">CATALOGUE NO. GH-26</span>
+<h5 class="font-headline-sm text-body-md font-bold mb-2">Heritage Pro Series</h5>
+<p class="font-label-md text-on-surface-variant">The definitive statement in pressure cooking technology.</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 md:col-start-8">
+<h2 class="font-headline-lg text-headline-lg mb-8">Architectural Utility</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
+                    We view the kitchen as a gallery of utility. Our design philosophy treats each vessel as a structural element—stable, efficient, and visually silent. By removing unnecessary ornamentation, we allow the raw beauty of the materials to command the space.
+                </p>
+<button class="bg-primary text-on-primary px-10 py-4 font-label-caps uppercase tracking-[0.2em] hover:bg-heritage-red transition-all active:scale-95">
+                    Explore Collection
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Enquiry Sidebar -->
+<aside class="fixed right-0 top-0 h-full w-[400px] max-w-[90vw] bg-white/95 backdrop-blur-2xl border-l border-outline-variant shadow-2xl z-[100] flex flex-col p-8 sidebar-slide translate-x-full" id="side-nav">
+<div class="flex flex-col space-y-4 mb-8">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-display-lg text-primary text-2xl leading-none">Enquiry List</h2>
+<p class="font-label-md text-on-surface-variant/70">Premium Kitchenware Archive</p>
+</div>
+<button class="p-2 hover:bg-surface-variant/50 rounded-full transition-colors" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-on-surface-variant">close</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 mb-6">
+<button class="flex flex-col items-center py-2 px-1 border-b-2 border-primary group">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">list_alt</span>
+<span class="text-[10px] font-label-caps mt-1 text-primary">ITEMS</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 text-on-surface-variant/40">
+<span class="material-symbols-outlined text-xl">settings_input_component</span>
+<span class="text-[10px] font-label-caps mt-1">SPECS</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 text-on-surface-variant/40">
+<span class="material-symbols-outlined text-xl">local_shipping</span>
+<span class="text-[10px] font-label-caps mt-1">SHIP</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 text-on-surface-variant/40">
+<span class="material-symbols-outlined text-xl">help_outline</span>
+<span class="text-[10px] font-label-caps mt-1">HELP</span>
+</button>
+</div>
+<div class="flex-grow overflow-y-auto space-y-6 pr-2">
+<!-- Sample Items for Enquiry Sidebar -->
+<div class="flex space-x-4 items-center group">
+<div class="w-20 h-20 bg-surface-container-low museum-border overflow-hidden flex-shrink-0">
+<img alt="Heritage Stainless 5L" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvgXpRK9dthNJnOWEXf-umKYz7QTSBkpoTPrI0PgxGcO3DkDzkdXok9aL5fh5BlsJX31dlnHzUZ0sZDn4IzhYVG9PH1BvuBntCaobhzHNxnSnDO10yReg69mFQ0VL89CfPan5qMuBg5mlB7TfctvXmJ80Ir3yU0oBPNSnv9k94hcfLIMkprWaorf_s779Kb4Fi74PfYP_1rCTwaaYoE_EVIxzGHfEdxtr8FVMwj9P8n6ANOk6hcGncFYdGs"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-md font-bold text-primary">Heritage Stainless 5L</h4>
+<p class="text-[10px] text-on-surface-variant/70 uppercase tracking-widest font-label-caps">SKU: SS-H5-2026</p>
+<button class="text-[10px] font-bold underline text-primary mt-1">Remove</button>
+</div>
+</div>
+<div class="flex space-x-4 items-center group">
+<div class="w-20 h-20 bg-surface-container-low museum-border overflow-hidden flex-shrink-0">
+<img alt="Elite Tri-ply 3L" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLseJKqnseZs39yEEkwID70bip_R3zrspaKUBsokeU4njb_D6kWW6yhOHvv6RvJlgwZmS1kK0WuMgrLulKK4olqKn7DBRGFruUTFAp8wR-vgbTvtzR89naPzHiEl-B1iNVxSjjOWeLzXt3nClJ2kkzY_sAmk4wmub7HxsMRrOFEw5d6u70zM4MM54qNRFn9S3Wp6DDH4cKI4A15CCJLRM0LmI7EVMaHdcErS21wqNDWZ287Z6twQryJ-DEst"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-md font-bold text-primary">Elite Tri-ply 3L</h4>
+<p class="text-[10px] text-on-surface-variant/70 uppercase tracking-widest font-label-caps">SKU: TP-E3-2026</p>
+<button class="text-[10px] font-bold underline text-primary mt-1">Remove</button>
+</div>
+</div>
+<div class="flex space-x-4 items-center group">
+<div class="w-20 h-20 bg-surface-container-low museum-border overflow-hidden flex-shrink-0">
+<img alt="Classic Anodized 7L" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLv-eJpIMU_GEwqV9xRd7XYgSCsM2W3DCpQ0cMOu_LJ1wSMq2oeOwk3Q6ukIC69NQVT4MSq1LO5kDimwNfOUElSsBaFvYJ4Ru3WmvjH4-KlsaOjERy4mjHfXcF1Z53Vw2hE-ibkb_-tvohduDPyXuzw3ZJX8W8hSBZG4juvUyFn-SzCh-EhuYEXeW3A9rUY7n6-kHvYZYo-n2ZdTtRC4JcQm9I5HiX5s1k_fm9ZGc7fB2JmJcD7PARrf5K06"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-label-md font-bold text-primary">Classic Anodized 7L</h4>
+<p class="text-[10px] text-on-surface-variant/70 uppercase tracking-widest font-label-caps">SKU: HA-C7-2026</p>
+<button class="text-[10px] font-bold underline text-primary mt-1">Remove</button>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/30 space-y-4">
+<button class="block w-full bg-primary text-white py-4 font-label-caps text-[13px] tracking-[0.2em] hover:bg-heritage-red transition-all shadow-lg text-center">
+            VIEW FULL ENQUIRY LIST
+        </button>
+<div class="flex justify-between px-2">
+<button class="flex items-center space-x-2 text-on-surface-variant/60 hover:text-error transition-colors">
+<span class="material-symbols-outlined text-sm">delete</span>
+<span class="font-label-caps text-[10px]">CLEAR ALL</span>
+</button>
+<button class="flex items-center space-x-2 text-on-surface-variant/60 hover:text-primary transition-colors" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-sm">close</span>
+<span class="font-label-caps text-[10px]">CLOSE</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant mt-section-padding">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-12 max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-2">
+<span class="font-display-lg text-headline-sm text-primary">Geetanjali</span>
+<p class="font-label-md text-on-surface-variant/60">© 2026 Geetanjali. Since 1997 Heritage.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Instagram</a>
+<a class="font-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="mailto:harshhomeappliances@gmail.com">harshhomeappliances@gmail.com</a>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary opacity-50">verified_user</span>
+<span class="material-symbols-outlined text-secondary opacity-50">local_shipping</span>
+<span class="material-symbols-outlined text-secondary opacity-50">support_agent</span>
+</div>
+</div>
+</footer>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('side-nav');
+        sidebar.classList.toggle('translate-x-full');
+    }
+
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+    });
+</script>
+</body></html>

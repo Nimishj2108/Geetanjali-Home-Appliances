@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stainless Steel Collection - Geetanjali</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&amp;family=Manrope:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#ffdad8",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "surface": "#faf9f7",
+                        "tertiary": "#4a4949",
+                        "on-secondary-container": "#663800",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#626161",
+                        "surface-container-high": "#e9e8e6",
+                        "on-surface": "#1a1c1b",
+                        "golden-ochre": "#F7941E",
+                        "on-background": "#1a1c1b",
+                        "on-tertiary-container": "#dfdddc",
+                        "secondary-fixed-dim": "#ffb874",
+                        "inverse-primary": "#ffb3b0",
+                        "background": "#faf9f7",
+                        "secondary-container": "#fd9924",
+                        "primary": "#98001b",
+                        "surface-container-low": "#f4f3f1",
+                        "surface-tint": "#b91a2a",
+                        "primary-container": "#be1e2d",
+                        "error-container": "#ffdad6",
+                        "charcoal-matte": "#2B2B2B",
+                        "surface-bright": "#faf9f7",
+                        "surface-container": "#efeeec",
+                        "secondary-fixed": "#ffdcbf",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-secondary-fixed": "#2d1600",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#410006",
+                        "platinum-gray": "#E5E5E5",
+                        "outline-variant": "#e3bebb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#ffd3d1",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f1f1ef",
+                        "inverse-surface": "#2f3130",
+                        "on-surface-variant": "#5b403f",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "heritage-red": "#BE1E2D",
+                        "canvas-white": "#FFFFFF",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e3e2e0",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-fixed-variant": "#930019",
+                        "surface-dim": "#dadad8",
+                        "outline": "#8f6f6e",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#8c4f00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding": "120px",
+                        "gutter": "32px",
+                        "margin-desktop": "80px",
+                        "unit": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "body-lg": ["Manrope"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "display-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .reveal.active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .delay-100 { transition-delay: 100ms; }
+            .delay-200 { transition-delay: 200ms; }
+            .delay-300 { transition-delay: 300ms; }
+            .delay-400 { transition-delay: 400ms; }
+        }
+
+        .nav-link-underline {
+            position: relative;
+        }
+        .nav-link-underline::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: theme('colors.heritage-red');
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .nav-link-underline:hover::after,
+        .nav-link-underline.active::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Sidebar styles */
+        .sidebar-transition {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body-md selection:bg-heritage-red selection:text-white">
+<!-- TopNavBar -->
+<header class="bg-canvas-white/80 dark:bg-charcoal-matte/80 backdrop-blur-md w-full top-0 sticky z-50 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto reveal active">
+<a class="flex items-center gap-2" href="{{DATA:SCREEN:SCREEN_65}}">
+<img alt="Geetanjali Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3-2yjz7bMkcM0lo4iB5GXmqxIQi2fFMj7eAne9fyZoE1dj_VN8F78NsiGjz_OmmRBvvkRM1ks5hBzQKiqwM4Oll06HLyt4RuKaODLx6c2bZlQ-41aeHEBflWMwymMLtxyFBuQzdlAAmL8G309OUtVfCwIEHMc9aeGfjcMJEXj8FX-iliKg8MapZUoqtqqcklT-VpuxwjY_mNcS2hNuRTqsoslL74d6PPiIPUuNUOxdhCyNHGBwHCGMukjMV4KqleteBI7LVgsbZ7O"/>
+</a>
+<nav class="hidden md:flex gap-8">
+<a class="font-headline-sm text-headline-sm font-medium text-charcoal-matte dark:text-surface-variant hover:text-heritage-red transition-colors duration-300 nav-link-underline" href="{{DATA:SCREEN:SCREEN_65}}">Home</a>
+<a class="font-headline-sm text-headline-sm font-medium text-heritage-red nav-link-underline active" href="{{DATA:SCREEN:SCREEN_73}}">Pressure Cookers</a>
+<a class="font-headline-sm text-headline-sm font-medium text-charcoal-matte dark:text-surface-variant hover:text-heritage-red transition-colors duration-300 nav-link-underline" href="{{DATA:SCREEN:SCREEN_100}}">Cookware</a>
+<a class="font-headline-sm text-headline-sm font-medium text-charcoal-matte dark:text-surface-variant hover:text-heritage-red transition-colors duration-300 nav-link-underline" href="{{DATA:SCREEN:SCREEN_122}}">About Us</a>
+<a class="font-headline-sm text-headline-sm font-medium text-charcoal-matte dark:text-surface-variant hover:text-heritage-red transition-colors duration-300 nav-link-underline" href="{{DATA:SCREEN:SCREEN_41}}">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4 text-primary dark:text-primary-fixed hover:text-golden-ochre transition-all duration-300 cursor-pointer hover:scale-105 active:scale-95 ease-[cubic-bezier(0.4,0,0.2,1)] relative" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-[28px]" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-heritage-red text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold" id="enquiry-badge">3</span>
+</div>
+</div>
+</header>
+<!-- Enquiry Sidebar -->
+<aside class="fixed right-0 top-0 h-full w-full md:w-[400px] bg-canvas-white dark:bg-charcoal-matte shadow-2xl z-[60] translate-x-full sidebar-transition flex flex-col" id="enquiry-sidebar">
+<div class="p-6 border-b border-surface-container flex justify-between items-center">
+<div>
+<h2 class="font-headline-md text-headline-md text-charcoal-matte">Enquiry List</h2>
+<p class="font-label-caps text-label-caps text-tertiary">Premium Kitchenware Archive</p>
+</div>
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors" onclick="toggleSidebar()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex-grow overflow-y-auto p-6 space-y-6">
+<!-- Mock Items matching the screenshot -->
+<div class="flex gap-4 items-center">
+<div class="w-20 h-20 bg-surface-container rounded overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw7VfArIeYfxoLWD2dl8lOwdONr4SZFcurh5Ip8bSHrAToVdpJCEb6RkOPAwR49iRUBps76pwZk7UvWLXQ2bPsrIMVE6PNXQ39FgKFgHpUVQTSxxRj5PQfPf5JZJFJnjDRynyIIwSHIyuXTxbliP4d8ISwej_zTSfiZmt9ehCQ1imoSdyFrDwubm0F6TJufIsCd-snyvoZGe2N9VyrvIMoLfzGzHjMyTCp2Jv5mE1KQuva8EA6jiXEyfqIQMpGGtl44xRMvSdS9GLb"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-charcoal-matte">Heritage Stainless 5L</h4>
+<p class="text-[12px] text-tertiary">SKU: SS-H5-2026</p>
+<button class="text-heritage-red text-[12px] font-bold underline mt-1">Remove</button>
+</div>
+</div>
+<div class="flex gap-4 items-center">
+<div class="w-20 h-20 bg-surface-container rounded overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ_MpfbYWoGYo7EnSm6kc0A2eXLzsBco_lc3i2WjAsPnyQCUIO8N-xjF3buK4LRDM-XFnL13vmv0aeVpMgnluxSfBU4-0QHCoA-lx5pVLi5f3A2UmAAH2Zwh5WocxWf0ftKAoPbyqsKPI_cr50ZAEru4FwhLasX_S8T4XhDZIdz82TKJqwaSBcOEV24LpsyzTMMwDwPz2eOjp0ivbpSzj6ORgE5HCEX3qrN2QRUroWyJ3C5AenX7THFQR7rjcNGnhtsjtIDqxIWZ7I"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-charcoal-matte">Elite Tri-ply 3L</h4>
+<p class="text-[12px] text-tertiary">SKU: TP-E3-2026</p>
+<button class="text-heritage-red text-[12px] font-bold underline mt-1">Remove</button>
+</div>
+</div>
+<div class="flex gap-4 items-center">
+<div class="w-20 h-20 bg-surface-container rounded overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9z_usqksSY7CWwlBBI4bCCSl6HCLBu4pPH9BqZq72YUNVnCdIwdeFrZqv3OiH9GzIV7YTm-FkeuCDkAY_26L0FDYFineD_LGRXVKkqsrRa9pFRmUOEa_j2czswSwsyTfMLzyoum1ODejXvIT3CztScRiN8YpYIVL5n8nfXp6ezktuHjey4myF814RLvE4rrmm39DvO6NrCLVwfEKssHliuZiwa6bplh5GtcTQ6TUIULPmKnT1PwXG7-6f-KbpVAEfJmqnD6vdFc2A"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-charcoal-matte">Classic Anodized 7L</h4>
+<p class="text-[12px] text-tertiary">SKU: HA-C7-2026</p>
+<button class="text-heritage-red text-[12px] font-bold underline mt-1">Remove</button>
+</div>
+</div>
+</div>
+<div class="p-6 border-t border-surface-container space-y-4">
+<button class="w-full bg-heritage-red text-white py-4 font-label-caps tracking-widest hover:bg-primary transition-colors">
+            VIEW FULL ENQUIRY LIST
+        </button>
+<div class="flex justify-between items-center px-2">
+<button class="flex items-center gap-2 text-tertiary hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span class="font-label-caps text-[10px]">CLEAR ALL</span>
+</button>
+<button class="flex items-center gap-2 text-tertiary hover:text-charcoal-matte transition-colors" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="font-label-caps text-[10px]">CLOSE</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity" id="sidebar-backdrop" onclick="toggleSidebar()"></div>
+<!-- Main Content -->
+<main class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-padding space-y-[120px]">
+<!-- Hero Header -->
+<section class="text-center max-w-4xl mx-auto space-y-8">
+<p class="font-label-caps text-label-caps text-golden-ochre tracking-widest uppercase reveal active">Heritage Series</p>
+<h1 class="font-display-lg text-display-lg text-charcoal-matte reveal delay-100 active">Stainless Steel Collection</h1>
+<p class="font-body-lg text-body-lg text-tertiary reveal delay-200 active">Experience culinary perfection with our premium 304 food-grade stainless steel pressure cookers. Designed for durability and elegance.</p>
+<div class="flex flex-wrap justify-center gap-4 pt-8">
+<div class="bg-platinum-gray px-4 py-2 rounded-full font-label-caps text-label-caps text-charcoal-matte flex items-center gap-2 reveal delay-200 active">
+<span class="material-symbols-outlined text-[16px]" data-icon="verified">verified</span>
+                    304 FOOD GRADE
+                </div>
+<div class="bg-platinum-gray px-4 py-2 rounded-full font-label-caps text-label-caps text-charcoal-matte flex items-center gap-2 reveal delay-300 active">
+<span class="material-symbols-outlined text-[16px]" data-icon="flare">flare</span>
+                    MIRROR FINISH
+                </div>
+<div class="bg-platinum-gray px-4 py-2 rounded-full font-label-caps text-label-caps text-charcoal-matte flex items-center gap-2 reveal delay-400 active">
+<span class="material-symbols-outlined text-[16px]" data-icon="workspace_premium">workspace_premium</span>
+                    ISI CERTIFIED
+                </div>
+</div>
+</section>
+<!-- Category Sub-Nav -->
+<div class="flex justify-center gap-6 md:gap-12 border-b border-surface-container-highest pb-4 reveal active">
+<a class="font-label-caps text-heritage-red border-b-2 border-heritage-red pb-4" href="{{DATA:SCREEN:SCREEN_73}}">Stainless Steel</a>
+<a class="font-label-caps text-tertiary hover:text-heritage-red transition-colors pb-4" href="{{DATA:SCREEN:SCREEN_100}}">Tri-ply</a>
+<a class="font-label-caps text-tertiary hover:text-heritage-red transition-colors pb-4" href="#">Hard Anodized</a>
+<a class="font-label-caps text-tertiary hover:text-heritage-red transition-colors pb-4" href="#">Aluminum</a>
+</div>
+<!-- Product Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<article class="bg-canvas-white rounded-xl overflow-hidden group hover:shadow-[0_20px_40px_-15px_rgba(43,43,43,0.1)] hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] border border-surface-container-highest reveal delay-100 active">
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]" data-alt="A high-end, minimalist product shot of a shiny, premium stainless steel inner lid pressure cooker in a contura shape, placed on a pristine white marble surface. The lighting is soft and studio-quality, highlighting the mirror finish. The background is a clean, bright canvas-white to create a luxury gallery aesthetic, emphasizing the sleek and modern design of the cookware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw7VfArIeYfxoLWD2dl8lOwdONr4SZFcurh5Ip8bSHrAToVdpJCEb6RkOPAwR49iRUBps76pwZk7UvWLXQ2bPsrIMVE6PNXQ39FgKFgHpUVQTSxxRj5PQfPf5JZJFJnjDRynyIIwSHIyuXTxbliP4d8ISwej_zTSfiZmt9ehCQ1imoSdyFrDwubm0F6TJufIsCd-snyvoZGe2N9VyrvIMoLfzGzHjMyTCp2Jv5mE1KQuva8EA6jiXEyfqIQMpGGtl44xRMvSdS9GLb"/>
+<div class="absolute top-4 left-4">
+<span class="bg-canvas-white/80 backdrop-blur-md px-3 py-1 font-label-caps text-label-caps text-charcoal-matte rounded-full shadow-sm">INNER LID</span>
+</div>
+</div>
+<div class="p-8 space-y-6">
+<div>
+<h3 class="font-headline-md text-headline-md text-charcoal-matte">Contura Shape</h3>
+<p class="font-body-md text-body-md text-tertiary mt-2">Stainless Steel</p>
+</div>
+<div class="space-y-3">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Select Size</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">1.5L</button>
+<button class="px-4 py-2 border border-heritage-red bg-heritage-red/5 rounded-DEFAULT font-label-md text-label-md text-heritage-red transition-colors">2.0L</button>
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">3.0L</button>
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">5.0L</button>
+</div>
+</div>
+<div class="flex flex-col gap-3 pt-4 border-t border-surface-container-highest">
+<button class="w-full bg-heritage-red text-white font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-primary-container active:scale-95 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-center gap-2" onclick="addToEnquiry()">
+<span class="material-symbols-outlined text-[20px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                            Add to Enquiry List
+                        </button>
+<button class="w-full bg-transparent border border-charcoal-matte text-charcoal-matte font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-surface-container-lowest active:scale-95 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+                            Enquire on WhatsApp
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-canvas-white rounded-xl overflow-hidden group hover:shadow-[0_20px_40px_-15px_rgba(43,43,43,0.1)] hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] border border-surface-container-highest reveal delay-200 active">
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]" data-alt="A sleek, professional product photograph of a standard, regular shape stainless steel outer lid pressure cooker. The pressure cooker is perfectly centered on a light, subtle tonal surface. The metallic sheen of the 304 food-grade stainless steel is brilliantly captured under high-end studio lighting, reflecting a clean, minimalist luxury aesthetic with deep contrast against a pale background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ_MpfbYWoGYo7EnSm6kc0A2eXLzsBco_lc3i2WjAsPnyQCUIO8N-xjF3buK4LRDM-XFnL13vmv0aeVpMgnluxSfBU4-0QHCoA-lx5pVLi5f3A2UmAAH2Zwh5WocxWf0ftKAoPbyqsKPI_cr50ZAEru4FwhLasX_S8T4XhDZIdz82TKJqwaSBcOEV24LpsyzTMMwDwPz2eOjp0ivbpSzj6ORgE5HCEX3qrN2QRUroWyJ3C5AenX7THFQR7rjcNGnhtsjtIDqxIWZ7I"/>
+<div class="absolute top-4 left-4">
+<span class="bg-canvas-white/80 backdrop-blur-md px-3 py-1 font-label-caps text-label-caps text-charcoal-matte rounded-full shadow-sm">OUTER LID</span>
+</div>
+</div>
+<div class="p-8 space-y-6">
+<div>
+<h3 class="font-headline-md text-headline-md text-charcoal-matte">Regular Shape</h3>
+<p class="font-body-md text-body-md text-tertiary mt-2">Stainless Steel</p>
+</div>
+<div class="space-y-3">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Select Size</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">1.5L</button>
+<button class="px-4 py-2 border border-heritage-red bg-heritage-red/5 rounded-DEFAULT font-label-md text-label-md text-heritage-red transition-colors">2.0L</button>
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">3.0L</button>
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">5.0L</button>
+</div>
+</div>
+<div class="flex flex-col gap-3 pt-4 border-t border-surface-container-highest">
+<button class="w-full bg-heritage-red text-white font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-primary-container active:scale-95 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-center gap-2" onclick="addToEnquiry()">
+<span class="material-symbols-outlined text-[20px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                            Add to Enquiry List
+                        </button>
+<button class="w-full bg-transparent border border-charcoal-matte text-charcoal-matte font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-surface-container-lowest active:scale-95 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+                            Enquire on WhatsApp
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-canvas-white rounded-xl overflow-hidden group hover:shadow-[0_20px_40px_-15px_rgba(43,43,43,0.1)] hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] border border-surface-container-highest reveal delay-300 active">
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]" data-alt="An elegant, architectural product image of a stainless steel outer lid pressure cooker in a traditional Handi shape. The cooker rests on a matte charcoal surface, creating a sophisticated tension with the bright, reflective stainless steel. The lighting emphasizes the smooth curves of the Handi shape. The overall mood is established, warm, and highly professional, fitting a luxury catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9z_usqksSY7CWwlBBI4bCCSl6HCLBu4pPH9BqZq72YUNVnCdIwdeFrZqv3OiH9GzIV7YTm-FkeuCDkAY_26L0FDYFineD_LGRXVKkqsrRa9pFRmUOEa_j2czswSwsyTfMLzyoum1ODejXvIT3CztScRiN8YpYIVL5n8nfXp6ezktuHjey4myF814RLvE4rrmm39DvO6NrCLVwfEKssHliuZiwa6bplh5GtcTQ6TUIULPmKnT1PwXG7-6f-KbpVAEfJmqnD6vdFc2A"/>
+<div class="absolute top-4 left-4">
+<span class="bg-canvas-white/80 backdrop-blur-md px-3 py-1 font-label-caps text-label-caps text-charcoal-matte rounded-full shadow-sm">OUTER LID</span>
+</div>
+</div>
+<div class="p-8 space-y-6">
+<div>
+<h3 class="font-headline-md text-headline-md text-charcoal-matte">Handi Shape</h3>
+<p class="font-body-md text-body-md text-tertiary mt-2">Stainless Steel</p>
+</div>
+<div class="space-y-3">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Select Size</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">1.5L</button>
+<button class="px-4 py-2 border border-heritage-red bg-heritage-red/5 rounded-DEFAULT font-label-md text-label-md text-heritage-red transition-colors">2.0L</button>
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">3.0L</button>
+<button class="px-4 py-2 border border-platinum-gray rounded-DEFAULT font-label-md text-label-md text-charcoal-matte hover:border-heritage-red hover:text-heritage-red transition-colors focus:border-heritage-red focus:ring-1 focus:ring-heritage-red">5.0L</button>
+</div>
+</div>
+<div class="flex flex-col gap-3 pt-4 border-t border-surface-container-highest">
+<button class="w-full bg-heritage-red text-white font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-primary-container active:scale-95 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-center gap-2" onclick="addToEnquiry()">
+<span class="material-symbols-outlined text-[20px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                            Add to Enquiry List
+                        </button>
+<button class="w-full bg-transparent border border-charcoal-matte text-charcoal-matte font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-surface-container-lowest active:scale-95 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+                            Enquire on WhatsApp
+                        </button>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-charcoal-matte full-width bottom-0 mt-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-section-padding max-w-[1440px] mx-auto reveal active">
+<div class="space-y-4">
+<img alt="Geetanjali Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3-2yjz7bMkcM0lo4iB5GXmqxIQi2fFMj7eAne9fyZoE1dj_VN8F78NsiGjz_OmmRBvvkRM1ks5hBzQKiqwM4Oll06HLyt4RuKaODLx6c2bZlQ-41aeHEBflWMwymMLtxyFBuQzdlAAmL8G309OUtVfCwIEHMc9aeGfjcMJEXj8FX-iliKg8MapZUoqtqqcklT-VpuxwjY_mNcS2hNuRTqsoslL74d6PPiIPUuNUOxdhCyNHGBwHCGMukjMV4KqleteBI7LVgsbZ7O"/>
+<p class="font-body-md text-body-md text-on-surface dark:text-surface-variant">© 2026 Geetanjali. Since 1997 Heritage.</p>
+</div>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-tertiary-fixed-variant dark:text-surface-variant hover:text-golden-ochre underline-offset-4 hover:underline transition-all ease-in-out duration-300" href="mailto:harshhomeappliances@gmail.com">Contact: harshhomeappliances@gmail.com</a>
+<a class="font-body-md text-body-md text-on-tertiary-fixed-variant dark:text-surface-variant hover:text-golden-ochre underline-offset-4 hover:underline transition-all ease-in-out duration-300" href="#">Instagram</a>
+</div>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-tertiary-fixed-variant dark:text-surface-variant hover:text-golden-ochre underline-offset-4 hover:underline transition-all ease-in-out duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+    let enquiryCount = 3;
+
+    function toggleSidebar() {
+        const sidebar = document.getElementById('enquiry-sidebar');
+        const backdrop = document.getElementById('sidebar-backdrop');
+        
+        if (sidebar.classList.contains('translate-x-full')) {
+            sidebar.classList.remove('translate-x-full');
+            backdrop.classList.remove('hidden');
+        } else {
+            sidebar.classList.add('translate-x-full');
+            backdrop.classList.add('hidden');
+        }
+    }
+
+    function addToEnquiry() {
+        enquiryCount++;
+        const badge = document.getElementById('enquiry-badge');
+        badge.innerText = enquiryCount;
+        
+        // Visual feedback for badge
+        badge.classList.add('scale-125');
+        setTimeout(() => badge.classList.remove('scale-125'), 200);
+        
+        // Auto-open sidebar
+        toggleSidebar();
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>
+</body></html>
