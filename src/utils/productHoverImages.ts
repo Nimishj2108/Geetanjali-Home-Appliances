@@ -1,6 +1,6 @@
 export const PRODUCT_HOVER_IMAGES: Record<string, string[]> = {
   "ss-regular": [
-    "https://lh3.googleusercontent.com/d/1hOPORnbm3COGtMfB8uGRQbl9MJab-E8R",
+    "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
     "https://lh3.googleusercontent.com/d/1-t3xm8TJisxJKN9HcNydtG9yRMziN0ph",
     "https://lh3.googleusercontent.com/d/1aH-duebdpPXGZUtyt8CikBwe_SGB13n-",
     "https://lh3.googleusercontent.com/d/1lUC2byKeremEJ0u6tyc2u6WzK0go2Qm5"

@@ -1132,6 +1132,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onAddToCart }) =
             className="w-full h-full object-cover select-none" 
             alt="A warm, atmospheric close-up of vegetable curry preparing in a polished stainless steel pan."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJoCuo4uSgHJHu4e-vRQRePolgigYBk4kPVVf2r_FX-a4J5TMilrCtjH-4RNHMWvnxbg-NIuj8FjYqI3YCqf3PoX8074-A4mo5kF3UI0RSzRTDRp2KQuEYB-KWbhzegRY9cnjfKfVBF-1LTgK8CS_BWZ8ksdHtuvobG98g6j9MblrQxwPt9LI_Dh7PhjExinBdbRDvNzLpO0v9RjPTKzcxmFpBAkIUIZodFHoU_kd6fQeewoTGArOKcgyb4uXoTh5vwWT9rpMXBWym"
+            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-black/30"></div>
         </div>
