@@ -30,9 +30,9 @@ export const PRODUCTS: Product[] = [
       "10.0L": 5399
     },
     sizeImages: {
-      "1.5L": "https://lh3.googleusercontent.com/d/1PlN9AspbLkG9sazPUJH54m2FUJ2k4WTs",
+      "1.5L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
       "2.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
-      "3.0L": "https://lh3.googleusercontent.com/d/1r2bIcXMxgktzOAxM87F8jG-MXYg7Np5O",
+      "3.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
       "5.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
       "8.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
       "10.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e"
