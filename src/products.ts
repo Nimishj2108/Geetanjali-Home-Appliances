@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     id: "ss-regular",
     name: "Regular Outer Lid",
     category: "Stainless Steel",
-    image: "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
+    image: "/images/gdrive_185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e.jpg",
     description: "Our signature regular shape pressure cooker with an outer lid, crafted from 304 food-grade stainless steel. Engineered for efficient heat transfer and maximum durability.",
     sizes: ["1.5L", "2.0L", "3.0L", "5.0L", "8.0L", "10.0L"],
     prices: {
@@ -30,12 +30,12 @@ export const PRODUCTS: Product[] = [
       "10.0L": 5399
     },
     sizeImages: {
-      "1.5L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
-      "2.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
-      "3.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
-      "5.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
-      "8.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e",
-      "10.0L": "https://lh3.googleusercontent.com/d/185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e"
+      "1.5L": "/images/gdrive_185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e.jpg",
+      "2.0L": "/images/gdrive_185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e.jpg",
+      "3.0L": "/images/gdrive_185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e.jpg",
+      "5.0L": "/images/gdrive_185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e.jpg",
+      "8.0L": "/images/gdrive_185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e.jpg",
+      "10.0L": "/images/gdrive_185Df8Wcoaa-YqmG7iJ91qpngY-F6oC0e.jpg"
     },
     features: ["304 Food Grade", "Mirror Finish", "ISI Certified", "Outer Lid"],
     type: "outer",
@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     id: "ss-handi",
     name: "Handi Outer Lid",
     category: "Stainless Steel",
-    image: "https://lh3.googleusercontent.com/d/1uavK27bMjrDXGLXmah0YVaZF383aLukm",
+    image: "/images/gdrive_1uavK27bMjrDXGLXmah0YVaZF383aLukm.jpg",
     description: "Traditional Handi shape outer lid pressure cooker, marrying classical aesthetics with high-grade stainless steel performance. Features thick-gauge sandwich bottom.",
     sizes: ["2.0L", "3.0L", "5.0L"],
     prices: {
@@ -54,9 +54,9 @@ export const PRODUCTS: Product[] = [
       "5.0L": 3050
     },
     sizeImages: {
-      "2.0L": "https://lh3.googleusercontent.com/d/1uavK27bMjrDXGLXmah0YVaZF383aLukm",
-      "3.0L": "https://lh3.googleusercontent.com/d/1uavK27bMjrDXGLXmah0YVaZF383aLukm",
-      "5.0L": "https://lh3.googleusercontent.com/d/1uavK27bMjrDXGLXmah0YVaZF383aLukm"
+      "2.0L": "/images/gdrive_1uavK27bMjrDXGLXmah0YVaZF383aLukm.jpg",
+      "3.0L": "/images/gdrive_1uavK27bMjrDXGLXmah0YVaZF383aLukm.jpg",
+      "5.0L": "/images/gdrive_1uavK27bMjrDXGLXmah0YVaZF383aLukm.jpg"
     },
     features: ["304 Food Grade", "Traditional Form", "ISI Certified", "Outer Lid"],
     type: "outer",
@@ -66,7 +66,7 @@ export const PRODUCTS: Product[] = [
     id: "ss-contura",
     name: "Contura Inner Lid",
     category: "Stainless Steel",
-    image: "https://lh3.googleusercontent.com/d/1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS",
+    image: "/images/gdrive_1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS.jpg",
     description: "Premium food-grade 304 stainless steel in a sleek Contura shape with an inner lid. Optimized for heavy-duty daily use with an induction-compatible base.",
     sizes: ["1.5L", "2.0L", "3.0L", "5.0L", "6.0L"],
     prices: {
@@ -77,11 +77,11 @@ export const PRODUCTS: Product[] = [
       "6.0L": 3699
     },
     sizeImages: {
-      "1.5L": "https://lh3.googleusercontent.com/d/1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS",
-      "2.0L": "https://lh3.googleusercontent.com/d/1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS",
-      "3.0L": "https://lh3.googleusercontent.com/d/1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS",
-      "5.0L": "https://lh3.googleusercontent.com/d/1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS",
-      "6.0L": "https://lh3.googleusercontent.com/d/1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS"
+      "1.5L": "/images/gdrive_1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS.jpg",
+      "2.0L": "/images/gdrive_1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS.jpg",
+      "3.0L": "/images/gdrive_1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS.jpg",
+      "5.0L": "/images/gdrive_1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS.jpg",
+      "6.0L": "/images/gdrive_1yHVinAI_Z_VW2Gqs8Dh4wNHMLWjmJFmS.jpg"
     },
     features: ["304 Food Grade", "Mirror Finish", "ISI Certified", "Inner Lid"],
     type: "inner",
@@ -93,7 +93,7 @@ export const PRODUCTS: Product[] = [
     id: "tp-classic",
     name: "Classic Inner Lid",
     category: "Tri-ply",
-    image: "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
+    image: "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
     description: "Classic straight-wall Inner Lid pressure cooker forged with premium Tri-ply SAS cladding for even heat distribution, maximum durability, and professional cooking precision.",
     sizes: ["1.5L", "2.0L", "3.0L", "5.0L", "6.5L", "8.0L", "10.0L", "12.0L"],
     prices: {
@@ -107,14 +107,14 @@ export const PRODUCTS: Product[] = [
       "12.0L": 7499
     },
     sizeImages: {
-      "1.5L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
-      "2.0L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
-      "3.0L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
-      "5.0L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
-      "6.5L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
-      "8.0L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
-      "10.0L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw",
-      "12.0L": "https://lh3.googleusercontent.com/d/1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw"
+      "1.5L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
+      "2.0L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
+      "3.0L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
+      "5.0L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
+      "6.5L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
+      "8.0L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
+      "10.0L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg",
+      "12.0L": "/images/gdrive_1l7Tu4rNBUjlEqPsHF5VvNnBbnd9Ic_lw.jpg"
     },
     features: ["SAS Technology", "Heavy-Gauge Body", "Inner Lid Classic", "Induction Base"],
     type: "inner",
@@ -124,7 +124,7 @@ export const PRODUCTS: Product[] = [
     id: "tp-contura",
     name: "Contura Inner Lid",
     category: "Tri-ply",
-    image: "https://lh3.googleusercontent.com/d/1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ",
+    image: "/images/gdrive_1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ.jpg",
     description: "Engineered with SAS (Stainless Steel - Aluminum - Stainless Steel) 3-layer construction. Heat spreads evenly with zero hot-spots, ensuring superb energy efficiency.",
     sizes: ["1.5L", "2.0L", "3.0L", "5.0L", "6.5L", "8.0L"],
     prices: {
@@ -136,12 +136,12 @@ export const PRODUCTS: Product[] = [
       "8.0L": 6899
     },
     sizeImages: {
-      "1.5L": "https://lh3.googleusercontent.com/d/1kZqLVh1CmPfq7K_JtVL3CRFjeUY9hUJt",
-      "2.0L": "https://lh3.googleusercontent.com/d/1kZqLVh1CmPfq7K_JtVL3CRFjeUY9hUJt",
-      "3.0L": "https://lh3.googleusercontent.com/d/1l4qdyg6e1tzCwUuiD1TkVMcxpSomln4l",
-      "5.0L": "https://lh3.googleusercontent.com/d/1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ",
-      "6.5L": "https://lh3.googleusercontent.com/d/1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ",
-      "8.0L": "https://lh3.googleusercontent.com/d/1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ"
+      "1.5L": "/images/gdrive_1kZqLVh1CmPfq7K_JtVL3CRFjeUY9hUJt.jpg",
+      "2.0L": "/images/gdrive_1kZqLVh1CmPfq7K_JtVL3CRFjeUY9hUJt.jpg",
+      "3.0L": "/images/gdrive_1l4qdyg6e1tzCwUuiD1TkVMcxpSomln4l.jpg",
+      "5.0L": "/images/gdrive_1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ.jpg",
+      "6.5L": "/images/gdrive_1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ.jpg",
+      "8.0L": "/images/gdrive_1KgZjXo6cLiiszJYX4U1ZzJRMes4DoaKJ.jpg"
     },
     features: ["SAS Technology", "Induction Compatible", "Mirror Finish", "Cool-Touch Handles"],
     type: "inner",
@@ -151,7 +151,7 @@ export const PRODUCTS: Product[] = [
     id: "tp-regular",
     name: "Regular Outer Lid",
     category: "Tri-ply",
-    image: "https://lh3.googleusercontent.com/d/1LqV8U51TWCZSa1mG_g3lNr6CuxIMYjCJ",
+    image: "/images/gdrive_1LqV8U51TWCZSa1mG_g3lNr6CuxIMYjCJ.jpg",
     description: "Classic outer lid design forged in a true tri-ply core. Incredible pressure retention and culinary precision with professional grade heavy-gauge lid.",
     sizes: ["1.5L", "2.0L", "3.0L", "5.0L", "8.0L", "10.0L"],
     prices: {
@@ -163,12 +163,12 @@ export const PRODUCTS: Product[] = [
       "10.0L": 5999
     },
     sizeImages: {
-      "1.5L": "https://lh3.googleusercontent.com/d/1WeBqK7CmmMU1xgzkwPh6y83FwrXElGls",
-      "2.0L": "https://lh3.googleusercontent.com/d/1J44cyP2sND_IFUVZ43YYTwzYB59BvqmY",
-      "3.0L": "https://lh3.googleusercontent.com/d/19oso-U7yyxZLuuRCRJzJLUNSezucL5XR",
-      "5.0L": "https://lh3.googleusercontent.com/d/1LqV8U51TWCZSa1mG_g3lNr6CuxIMYjCJ",
-      "8.0L": "https://lh3.googleusercontent.com/d/1K5qDnDytOHOT1RkfSfjLhOPpTCMrb3oi",
-      "10.0L": "https://lh3.googleusercontent.com/d/1K5qDnDytOHOT1RkfSfjLhOPpTCMrb3oi"
+      "1.5L": "/images/gdrive_1WeBqK7CmmMU1xgzkwPh6y83FwrXElGls.jpg",
+      "2.0L": "/images/gdrive_1J44cyP2sND_IFUVZ43YYTwzYB59BvqmY.jpg",
+      "3.0L": "/images/gdrive_19oso-U7yyxZLuuRCRJzJLUNSezucL5XR.jpg",
+      "5.0L": "/images/gdrive_1LqV8U51TWCZSa1mG_g3lNr6CuxIMYjCJ.jpg",
+      "8.0L": "/images/gdrive_1K5qDnDytOHOT1RkfSfjLhOPpTCMrb3oi.jpg",
+      "10.0L": "/images/gdrive_1K5qDnDytOHOT1RkfSfjLhOPpTCMrb3oi.jpg"
     },
     features: ["SAS Technology", "Induction Base", "Even Heating", "Ergonomic Handles"],
     type: "outer",
@@ -178,7 +178,7 @@ export const PRODUCTS: Product[] = [
     id: "tp-handi",
     name: "Handi Outer Lid",
     category: "Tri-ply",
-    image: "https://lh3.googleusercontent.com/d/1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B",
+    image: "/images/gdrive_1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B.jpg",
     description: "Traditional handi style with state-of-the-art SAS tri-ply material. Enhances flavor infusion and allows for gentle simmering, retaining moisture.",
     sizes: ["2.0L", "3.0L", "5.0L"],
     prices: {
@@ -187,9 +187,9 @@ export const PRODUCTS: Product[] = [
       "5.0L": 3499
     },
     sizeImages: {
-      "2.0L": "https://lh3.googleusercontent.com/d/1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B",
-      "3.0L": "https://lh3.googleusercontent.com/d/1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B",
-      "5.0L": "https://lh3.googleusercontent.com/d/1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B"
+      "2.0L": "/images/gdrive_1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B.jpg",
+      "3.0L": "/images/gdrive_1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B.jpg",
+      "5.0L": "/images/gdrive_1IcBSOQyy7YHpZzmLZF9Quy0tXmP9T80B.jpg"
     },
     features: ["SAS Technology", "Traditional Silhouette", "Mirror Finish", "Eco-Friendly Design"],
     type: "outer",
@@ -201,7 +201,7 @@ export const PRODUCTS: Product[] = [
     id: "bb-inner",
     name: "Black Beauty Inner Lid",
     category: "Black Beauty",
-    image: "https://lh3.googleusercontent.com/d/1UyMgAip7WpZnvg00iHpxquTr9SypMs01",
+    image: "/images/gdrive_1UyMgAip7WpZnvg00iHpxquTr9SypMs01.jpg",
     description: "Stunning hard-anodized black finish with a high-grade inner lid. Stronger than steel, thermal-efficient, scratch-resistant, and non-reactive with acidic foods.",
     sizes: ["2.0L", "3.0L", "5.0L"],
     prices: {
@@ -219,7 +219,7 @@ export const PRODUCTS: Product[] = [
     id: "al-regular",
     name: "Heritage Aluminum Regular",
     category: "Heritage Aluminum",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAGzWUBERMBKY17yvhsVHNUjBx_JcKYWYfsBjjQH3D7NYCETLgbhq0ZQJ2RKeDtzx0Ugw8fBtmNVICzo_hcljpU6HsgkSnzd7tXoTegwJFBUFlojU_1F0Bz6GtczBps5xJ0Qu7oJtPKodTPejwHghCwrhN0_1UqSZHJIDZ1jvPIm-EolwIA3smcEmdTAlMyzK9HW_q5J3HHM-A1HvtMV43koElT426d_O0TdBQhuE9PaUnjQmWo_yY5EkmFPh0JWV5g5iwFHId14E1F",
+    image: "/images/gdrive_d76c12d24e.jpg",
     description: "Our classic workhorse made from high-grade virgin aluminum. High durability, heavy base, and rapid thermal distribution, certified for secure operations.",
     sizes: ["2.0L", "3.0L", "5.0L"],
     prices: {
@@ -228,9 +228,9 @@ export const PRODUCTS: Product[] = [
       "5.0L": 1799
     },
     sizeImages: {
-      "2.0L": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGzWUBERMBKY17yvhsVHNUjBx_JcKYWYfsBjjQH3D7NYCETLgbhq0ZQJ2RKeDtzx0Ugw8fBtmNVICzo_hcljpU6HsgkSnzd7tXoTegwJFBUFlojU_1F0Bz6GtczBps5xJ0Qu7oJtPKodTPejwHghCwrhN0_1UqSZHJIDZ1jvPIm-EolwIA3smcEmdTAlMyzK9HW_q5J3HHM-A1HvtMV43koElT426d_O0TdBQhuE9PaUnjQmWo_yY5EkmFPh0JWV5g5iwFHId14E1F",
-      "3.0L": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGzWUBERMBKY17yvhsVHNUjBx_JcKYWYfsBjjQH3D7NYCETLgbhq0ZQJ2RKeDtzx0Ugw8fBtmNVICzo_hcljpU6HsgkSnzd7tXoTegwJFBUFlojU_1F0Bz6GtczBps5xJ0Qu7oJtPKodTPejwHghCwrhN0_1UqSZHJIDZ1jvPIm-EolwIA3smcEmdTAlMyzK9HW_q5J3HHM-A1HvtMV43koElT426d_O0TdBQhuE9PaUnjQmWo_yY5EkmFPh0JWV5g5iwFHId14E1F",
-      "5.0L": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGzWUBERMBKY17yvhsVHNUjBx_JcKYWYfsBjjQH3D7NYCETLgbhq0ZQJ2RKeDtzx0Ugw8fBtmNVICzo_hcljpU6HsgkSnzd7tXoTegwJFBUFlojU_1F0Bz6GtczBps5xJ0Qu7oJtPKodTPejwHghCwrhN0_1UqSZHJIDZ1jvPIm-EolwIA3smcEmdTAlMyzK9HW_q5J3HHM-A1HvtMV43koElT426d_O0TdBQhuE9PaUnjQmWo_yY5EkmFPh0JWV5g5iwFHId14E1F"
+      "2.0L": "/images/gdrive_d76c12d24e.jpg",
+      "3.0L": "/images/gdrive_d76c12d24e.jpg",
+      "5.0L": "/images/gdrive_d76c12d24e.jpg"
     },
     features: ["Virgin Aluminum", "Heavy Duty Base", "ISI Certified", "Outer Lid"],
     type: "outer",
@@ -242,7 +242,7 @@ export const PRODUCTS: Product[] = [
     id: "cw-saucepan",
     name: "Heritage Saucepan",
     category: "Cookware",
-    image: "https://lh3.googleusercontent.com/d/1q2g6P_FJbTBm91X48AkfEKcLfLPcZZFG",
+    image: "/images/gdrive_1q2g6P_FJbTBm91X48AkfEKcLfLPcZZFG.jpg",
     description: "Premium tri-ply construction for even heat distribution, perfect for delicate sauces, tea, coffee, and liquid reductions.",
     sizes: ["14cm", "16cm", "18cm", "20cm"],
     prices: {
@@ -259,7 +259,7 @@ export const PRODUCTS: Product[] = [
     id: "cw-frypan",
     name: "Heritage Frypan",
     category: "Cookware",
-    image: "https://lh3.googleusercontent.com/d/1DKfAS8SErj7JV-9kVl5n1Yptc3pPccYQ",
+    image: "/images/gdrive_1DKfAS8SErj7JV-9kVl5n1Yptc3pPccYQ.jpg",
     description: "Effortless food release and quick cleanup with our robust, scratch-resistant non-stick coating and thick sturdy core.",
     sizes: ["18cm", "20cm", "22cm", "24cm", "26cm"],
     prices: {
@@ -277,7 +277,7 @@ export const PRODUCTS: Product[] = [
     id: "cw-saucepot",
     name: "Heritage Sauce Pot / Stew Pan",
     category: "Cookware",
-    image: "https://lh3.googleusercontent.com/d/1CAnXd12tGeD7WMbfSnfPjUN6ck3Qfp98",
+    image: "/images/gdrive_1CAnXd12tGeD7WMbfSnfPjUN6ck3Qfp98.jpg",
     description: "Versatile heavy-gauge pot designed for slow cooking, robust curries, braising, and serving large family preparations.",
     sizes: ["18cm", "20cm", "22cm", "24cm", "26cm", "28cm"],
     prices: {
@@ -296,7 +296,7 @@ export const PRODUCTS: Product[] = [
     id: "cw-kadhai",
     name: "Heritage Kadhai",
     category: "Cookware",
-    image: "https://lh3.googleusercontent.com/d/11c58R81MCJotw6x7b491YM1LibFUVIw8",
+    image: "/images/gdrive_11c58R81MCJotw6x7b491YM1LibFUVIw8.jpg",
     description: "The essential cornerstone of Indian cooking. Tri-ply construction is ideal for deep frying, stir-frying, and retaining heat during cooking.",
     sizes: ["18cm", "20cm", "22cm", "24cm", "26cm", "28cm", "30cm", "34cm", "40cm"],
     prices: {
@@ -318,7 +318,7 @@ export const PRODUCTS: Product[] = [
     id: "cw-tope",
     name: "Heritage Tope",
     category: "Cookware",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBtfOHw0JjAsIW3eihkYs7mZKVnNTVtT5rLF4Pc7Nto0PxC6k5lRWKepfJSnckQqiIKgHtd4mODnAXNqV5MdgZtuPHCN-UJ68eqKOfixlO41MKdfxfWKJ8zNU4GNjYffbP2lZcoqPoX4qGpwnWulrlQlNKNLpU3ybZh5Soe63AZy32vKBbjEc_9C449eR-Lv9gSSeoJ_9J0XJWOe1FQFHYErHv-RmsADvDoet462RvTwPIACs-bGU4dDjjxPwHebkWjAeE94IszJnUA",
+    image: "/images/gdrive_a10d823e66.png",
     description: "An absolute essential for boiling milk, preparing tea, or simmering lentils. High-quality heavy-gauge construction with custom rimming.",
     sizes: ["14cm", "18cm", "22cm", "26cm", "30cm", "32cm"],
     prices: {
@@ -337,7 +337,7 @@ export const PRODUCTS: Product[] = [
     id: "cw-tasla",
     name: "Heritage Tasla",
     category: "Cookware",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDu7IfBMfVK6r_6_90oP3cHWTIbiZ_ar4bYv0GbMAcX_1Y91YhFB1hCgAJAljGKCaU9SqK9H4OtYj6MfD_sA3fjHVSZA5Gxcv1V2ykOojEKTY6VG1xABW6EXsV5p3uOTwpMZ430oWNgGVaipnYfvtoRnNX5NLkTnF39tTtiRODyV6_BbBb8Jp2D1R8HvOXRk-U6Cc9qw_d3L8pYmgj5ffu1gUW6GStj0kFEcWYoHYOxnEjjuG9vOKrDSFfdNOpX-wUbIPhlVeT6OEJt",
+    image: "/images/gdrive_cf03f79a50.jpg",
     description: "Expertly crafted wide-mouthed tasla, ideal for kneading fresh dough, sautéing vegetables, or organizing pre-cooking steps.",
     sizes: ["18cm", "22cm", "26cm", "30cm", "34cm", "40cm"],
     prices: {
@@ -357,7 +357,7 @@ export const PRODUCTS: Product[] = [
     id: "hc-kadhai",
     name: "Kadhai",
     category: "Honeycomb Cookware",
-    image: "https://lh3.googleusercontent.com/d/188EKwnvP8EKVvJCFgoRd_atX9BH8oUki",
+    image: "/images/gdrive_188EKwnvP8EKVvJCFgoRd_atX9BH8oUki.jpg",
     description: "Our premium traditional Indian kadhai enhanced with advanced honeycomb cladding technology. Perfectly suited for high-heat stir frying, deep frying, and braising with effortless cleanup.",
     sizes: ["18 cm", "20 cm", "22 cm", "24 cm", "26 cm", "28 cm", "30 cm", "32 cm"],
     prices: {
@@ -378,7 +378,7 @@ export const PRODUCTS: Product[] = [
     id: "hc-rotitawa",
     name: "Roti Tawa",
     category: "Honeycomb Cookware",
-    image: "https://lh3.googleusercontent.com/d/1OY5DBQ717wT7gHj5Tp2rWYfexJumJ4lQ",
+    image: "/images/gdrive_1OY5DBQ717wT7gHj5Tp2rWYfexJumJ4lQ.jpg",
     description: "Designed for perfect golden rotis, phulkas, and chapatis with uniform heat transfer and raised honeycomb protection.",
     sizes: ["23 cm", "25 cm", "28 cm"],
     prices: {
@@ -394,7 +394,7 @@ export const PRODUCTS: Product[] = [
     id: "hc-dosatawa",
     name: "Dosa Tawa",
     category: "Honeycomb Cookware",
-    image: "https://lh3.googleusercontent.com/d/1sqPVzUBixHwAfQZ5g-6zZgmXrVhH5kCq",
+    image: "/images/gdrive_1sqPVzUBixHwAfQZ5g-6zZgmXrVhH5kCq.jpg",
     description: "Wide flat surface ideal for crispy restaurant-style dosas, uttapams, and crepes with rapid heat distribution.",
     sizes: ["28 cm", "30 cm", "32 cm"],
     prices: {
@@ -410,7 +410,7 @@ export const PRODUCTS: Product[] = [
     id: "hc-frypan",
     name: "Frypan",
     category: "Honeycomb Cookware",
-    image: "https://lh3.googleusercontent.com/d/1Fa_rCMs-g7JC8VkH5Ibgg4cvyGzUXhiE",
+    image: "/images/gdrive_1Fa_rCMs-g7JC8VkH5Ibgg4cvyGzUXhiE.jpg",
     description: "Features a raised stainless steel honeycomb grid that protects the premium non-stick layer from scratches. 100% metal-spoon friendly, ideal for crispy searing and uniform shallow-frying.",
     sizes: ["20 cm", "22 cm", "24 cm"],
     prices: {
@@ -426,7 +426,7 @@ export const PRODUCTS: Product[] = [
     id: "hc-tasla",
     name: "Tasla",
     category: "Honeycomb Cookware",
-    image: "https://lh3.googleusercontent.com/d/10fk82HMIO-uCK0W1M2Z60VTQVeYbf5-z",
+    image: "/images/gdrive_10fk82HMIO-uCK0W1M2Z60VTQVeYbf5-z.jpg",
     description: "Premium wide-mouth Tasla with modern honeycomb textured layers. Ideal for effortless sauteing, dough prep, and everyday kitchen use with pristine style.",
     sizes: ["18 cm", "20 cm", "22 cm", "24 cm", "26 cm", "28 cm", "30 cm", "32 cm"],
     prices: {
